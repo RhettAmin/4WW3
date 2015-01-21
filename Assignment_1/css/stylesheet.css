@@ -12,6 +12,8 @@ nav > a {
  	margin-left: auto;
  	margin-right: auto;
  	border: 1px solid black;
+ 	float: none;
+ 	text-align: center;
 }
 
 /**************************/
@@ -22,6 +24,8 @@ nav > a {
 	width: 27%;
 	margin: auto;
 	border: 1px solid black;
+	float: none;
+	text-align: left;
  }
 
 .inlinelabels {
@@ -36,6 +40,12 @@ nav > a {
 /******** Contact *********/
 /**************************/
 
+.center {
+	text-align: center;
+	border: 1px solid black;
+	width: 25%;
+	margin-left:37%;
+}
 
 .heightspacer1{
 	height: 1px;
