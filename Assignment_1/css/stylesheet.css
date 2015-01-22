@@ -40,12 +40,42 @@ nav > a {
 /******** Contact *********/
 /**************************/
 
+.dev-container {
+	float: none;
+	text-align: center;
+	width: 40%;
+	margin: auto 20%;
+	padding: 15px;
+	display:inline-block;
+}
+
+.dev {
+	width: 200px;
+	margin: auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	display:inline-block;
+	color: #ff9547;
+	background: linear-gradient(#555, #444);
+}
+.dev > img {
+	border-radius: 50%;
+	border: 2px solid #ff9547;
+}
+.dev > p {
+	margin: auto;
+}
+
 .center {
 	text-align: center;
 	border: 1px solid black;
 	width: 25%;
 	margin-left:37%;
 }
+
+/**************************/
+/********* Misc. **********/
+/**************************/
 
 .heightspacer1{
 	height: 1px;
