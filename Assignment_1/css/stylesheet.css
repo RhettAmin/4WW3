@@ -2,6 +2,19 @@ body {
 	margin: 0;
 }
 
+.page-wrap {
+	overflow-x: hidden;
+	position: relative;
+	left: 0px;
+}
+
+.flair {
+	height: 5px;
+	background: -webkit-linear-gradient(left, red , blue); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(right, red, blue); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(right, red, blue); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to right, red , blue); /* Standard syntax */
+}
 
 /**************************/
 /******** Sidebar *********/
@@ -44,25 +57,24 @@ body {
 	top: 5px;
 	left: 20px;
 	z-index: 1;
-	-webkit-transition: all 0.35s ease-in-out 0;
-  	-moz-transition: all 0.35s ease-in-out 0;
-  	transition: all 0.35s ease-in-out 0;
+	-webkit-transition: all 0.45s ease-in-out 0;
+  	-moz-transition: all 0.45s ease-in-out 0;
+  	transition: all 0.45s ease-in-out 0;
 }
-#toggler {
-	display: none;
+.sidebar-open .toggle {
+	left: 190px;
+	-webkit-transition: all 0.3s ease-in-out 0;
+  	-moz-transition: all 0.3s ease-in-out 0;
+  	transition: all 0.3s ease-in-out 0;
 }
-#toggler:checked + .page-wrap .sidebar {
-	left: 0px; 
+
+.sidebar-open .sidebar{
+	left: 0px;
 	-webkit-transition: all 0.4s ease-out 0;
   	-moz-transition: all 0.4s ease-out 0;
   	transition: all 0.4s ease-out 0;
 }
-#toggler:checked + .page-wrap .toggle {
-	left: 200px; 
-	-webkit-transition: all 0.35s ease-in-out 0;
-  	-moz-transition: all 0.35s ease-in-out 0;
-  	transition: all 0.35s ease-in-out 0;
-}
+
 
 
 .content {
@@ -70,6 +82,7 @@ body {
     position: relative;
     z-index: 0;
 }
+
 
 .container {
  	margin-left: auto;
@@ -106,12 +119,16 @@ body {
 	float: none;
 	text-align: center;
 	margin: auto;
-	padding: 15px;
+	height: 300px;
 	display:inline-block;
+}
+.dev-container > table {
+	height: 100%;
 }
 
 .dev {
 	width: 200px;
+	height: 100%;
 	margin: auto;
 	padding-top: 10px;
 	padding-bottom: 10px;
