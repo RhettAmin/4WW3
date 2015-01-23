@@ -64,16 +64,6 @@ body {
   	transition: all 0.35s ease-in-out 0;
 }
 
-#gtoggler {
-	display: none;
-}
-
-#toggler:not(:checked) + .page-wrap +  .global-close {
-	left: -190px;
-}
-}#toggler:checked + .page-wrap + .global-close {
-	left: -190px;
-}
 
 .content {
     background-color: #fff;
