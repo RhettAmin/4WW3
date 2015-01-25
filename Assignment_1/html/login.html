@@ -1,35 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang ="en">
+
   <head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"  content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' type='text/css' href='../css/stylesheet.css'>  
     <title>Gleash</title>
   </head>
 
   <body>
-    <div id="header">
-      <h1>Join us!</h1>
-    </div>
+   
+    <div class="page-wrap">
 
-    <div id="links">
-      <nav>
-      	<a href="index.html">Home</a><br>
-      	<a href="https://google.com">Cataloge</a><br>
-      	<a href="https://google.com">Contact</a><br>
-      	<a href="#">Login</a><br>
-      	<a href="registration.html">Register</a><br><br>
-      </nav>
-    </div>
+      <div class="flair"></div>
+
+      <label class="toggle">☰</label>
   
-  
-  <form>
-    Username:<br>
-    <input type="text" name="username">
-    <br><br>
-    Password:<br>
-    <input type="password" name="psw">
-    <br><br>
-    <input type="submit" value="Submit">
-    <input type="reset" value="Reset">
-  </form>
+      <div class="content">
+        <div class="container">
+
+          <div class="login">
+            <h2 style="text-align: center">Join us!</h2>
+            <form>
+
+              <div class="inlinelabels">
+                <label>Username</label>
+              </div>
+              <div>
+                <input type="text" name="username">              
+              </div>              
+              
+              <div class="heightspacer10"></div>
+
+              <div class="inlinelabels">
+                <label>Password</label>
+              </div>
+              <div>
+                <input type="text" name="username">              
+              </div>
+
+              <div class="heightspacer15"></div>
+
+              <div class="form-buttons">
+                <button type="submit" value="Submit">Submit</button> 
+                <button type="reset" value="Reset">Reset</button>
+              </div>
+          
+            </form>
+          </div>
+        </div>
+      </div> <!-- END Content -->
+
+      <div class="sidebar">
+        <ul>
+          <a href="index.html"><li>HOME</li></a>
+          <a href="index.html"><li>CATALOGUE</li></a>
+          <a href="contact.html"><li>CONTACT US</li></a>
+          <a href="login.html"><li>LOGIN</li></a>
+          <a href="#"><li>REGISTER</li></a>
+        </ul>
+      </div>
+
+    </div><!-- page-wrap -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"> </script>
+    <script src="../js/sidebar_toggle.js"></script>
 
 </body>
 
