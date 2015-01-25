@@ -6,6 +6,7 @@ body {
 	overflow-x: hidden;
 	position: relative;
 	left: 0px;
+	background: #427;
 }
 
 .flair {
@@ -22,11 +23,11 @@ body {
 .sidebar {
 	position: fixed;
 	top: 0px;
-	left: -190px;
+	left: -220px;
 	bottom: 0px;
 	z-index: 0;
 
-	width: 120px;
+	width: 150px;
 	padding: 30px;
 	background: #333;
 	-webkit-transition: all 0.4s ease-out 0;
@@ -37,19 +38,24 @@ body {
 	margin-top: -15px;
 	list-style: none;
 }
-.sidebar > ul > li {
+.sidebar > ul > a {
+	text-decoration: none;
+	font-style: none;
+}
+.sidebar > ul > a > li {
 	margin-left: -50px;
 	padding: 10px;
 	color: rgba(255, 130, 100, 0.8);
 	font-family: "Ubuntu", sans-serf;
-	font-size: 16px;
+	font-size: 20px;
 	-webkit-font-smoothing: antialiased;
 	-moz-font-smoothing: antialiased;
 	font-smoothing: antialiased;
 }
-.sidebar > ul > li:hover {
+.sidebar > ul > a > li:hover {
 	color: rgba(255, 130, 100, 1);
 }
+
 
 .toggle {
 	font-size: 36px;
@@ -62,7 +68,7 @@ body {
   	transition: all 0.45s ease-in-out 0;
 }
 .sidebar-open .toggle {
-	left: 190px;
+	left: 220px;
 	-webkit-transition: all 0.3s ease-in-out 0;
   	-moz-transition: all 0.3s ease-in-out 0;
   	transition: all 0.3s ease-in-out 0;
@@ -76,11 +82,13 @@ body {
 }
 
 
-
 .content {
     background-color: #fff;
     position: relative;
     z-index: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: 100%;
 }
 
 
@@ -101,6 +109,41 @@ body {
 	border: 1px solid black;
 	float: none;
 	text-align: left;
+ }
+ .registration > form {
+ 	padding-left: 50px
+ }
+ .registration > form > .form-buttons {
+ 	text-align: center;
+ 	margin-left: -50px;
+ 	padding: 15px;
+ 	letter-spacing: 10px;
+ }
+ .registration > form > .form-buttons > button{
+ 	background-color:#44c767;
+	border-radius:6px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: "Ubuntu", sans-serf;
+	font-size:12px;
+	padding:10px 30px;
+	box-shadow: 1px 1px 0px 1px #3dc21b;
+	text-shadow:0px 0px 0px #2f6627;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	-moz-box-shadow: 1px 1px 0px 1px #3dc21b;
+	-webkit-box-shadow: 1px 1px 0px 1px #3dc21b;
+}
+.myButton:hover {
+	background-color:#5cbf2a;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
  }
 
 .inlinelabels {

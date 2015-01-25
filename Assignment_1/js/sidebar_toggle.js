@@ -5,7 +5,7 @@
 		return false;
 	});
 
-	$('body').click(function(e){
+	$('.content').click(function(e){
 		if(body.hasClass('sidebar-open')){
 			body.toggleClass('sidebar-open');
 			return false;
