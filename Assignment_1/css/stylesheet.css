@@ -4,6 +4,14 @@ body {
 label {
 	font-weight: bold;
 }
+i {
+	position: fixed;
+	top: 0px;
+	left: 15px;
+	-webkit-transition: all 0.45s ease-in-out 0;
+  	-moz-transition: all 0.45s ease-in-out 0;
+  	transition: all 0.45s ease-in-out 0;
+}
 
 .page-wrap {
 	overflow-x: hidden;
@@ -17,6 +25,64 @@ label {
 	background: -o-linear-gradient(right, red, blue); /* For Opera 11.1 to 12.0 */
 	background: -moz-linear-gradient(right, red, blue); /* For Firefox 3.6 to 15 */
 	background: linear-gradient(to right, red , blue); /* Standard syntax */
+}
+
+#giraffe-landscape > img{
+ 	width: 100%;
+ 	margin-bottom: -4px;
+}
+
+/**************************/
+/******** Sidemenu ********/
+/**************************/
+.sidemenu {
+	position: fixed;
+	top: 0px;
+	left: -250px;
+	bottom: 0px;
+	z-index: 1;
+	width: 250px;
+	padding: 0px;
+	-webkit-transition: all 0.4s ease-out 0;
+  	-moz-transition: all 0.4s ease-out 0;
+  	transition: all 0.4s ease-out 0;
+}
+.sidemenu > ul > a {
+	margin-bottom: -5px;
+}
+.sidemenu > ul > a > li {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 250px;
+	padding: 10px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	font-size: 20px;
+}
+#brand {
+	position: relative;
+	top: -15px;
+	left: 0px;
+	width: 250px;
+
+	font-size: 24px;
+	padding: 20px;
+	padding-left: 10px;
+	margin-bottom: -5px;
+}
+
+.sidemenu-open .sidemenu{
+	left: 0px;
+	-webkit-transition: all 0.4s ease-out 0;
+  	-moz-transition: all 0.4s ease-out 0;
+  	transition: all 0.4s ease-out 0;
+}
+.sidemenu-open #toggle-sidemenu {
+	left: 260px;
+	-webkit-transition: all 0.3s ease-in-out 0;
+  	-moz-transition: all 0.3s ease-in-out 0;
+  	transition: all 0.3s ease-in-out 0;
 }
 
 /**************************/
@@ -64,7 +130,6 @@ label {
 	position: fixed;
 	top: 5px;
 	left: 20px;
-	z-index: 1;
 	-webkit-transition: all 0.45s ease-in-out 0;
   	-moz-transition: all 0.45s ease-in-out 0;
   	transition: all 0.45s ease-in-out 0;
@@ -89,19 +154,6 @@ label {
   	transition: all 0.4s ease-out 0;
 }
 
-
-.content {
-    background-color: #fff;
-    position: relative;
-    z-index: 0;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    height: 100%;
-    left: 0px;
-    -webkit-transition: all 0.4s ease-out 0;
-  	-moz-transition: all 0.4s ease-out 0;
-  	transition: all 0.4s ease-out 0;
-}
 
 
 .container {
@@ -210,6 +262,34 @@ label {
 /**************************/
 /******** Contact *********/
 /**************************/
+
+
+#about-us {
+	position: relative;
+	top: -30px;
+}
+
+#devs{
+	height: 50px;
+}
+#devs-img {
+	border: 1px solid #ffb300;
+}
+#devs-text{
+	height: 60px;
+}
+#devs-title {
+	margin-top: 5px;
+	margin-bottom: 0px;
+	font-size: 20px;
+	font-weight: bold;
+}
+#devs-num {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-size: 16px;
+	font-weight: bold;
+}
 
 .dev-container {
 	float: none;

@@ -1,69 +1,120 @@
 <!doctype html>
-<html lang = "en">
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"  content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' type='text/css' href='../css/stylesheet.css'>    
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
+     <link type="text/css" rel="stylesheet" href="../css/stylesheet.css"  media="screen,projection"/>
+    <title>Gleash - Contact Us</title> 
+  </head>
 
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible"  content="IE=edge,chrome=1">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel='stylesheet' type='text/css' href='../css/stylesheet.css'> 	
-		<title>Gleash - Contact Us</title>	
-	</head>
+  <body class="">
 
-	<body>
+    <i id="toggle-sidemenu" class="medium mdi-navigation-menu"></i>
 
-		<div class="page-wrap">
+    <!--************* Main *************-->
+    <main class="content">
+    
+      <section id="giraffe-landscape" class="grey lighten-1 z-depth-1">
+        <img src="../images/gleash_landscape.jpg"> 
+      </section>
 
-			<div class="flair"></div>
+      <section id="about-us" class="card-panel z-depth-1 container">
+          <header><h4><strong>About Us!</strong></h4><header>
+          <section>
+            <p>
+              We are your dedicated team, working hard to bring you the best top quality
+              Giraffe Leashes from around the world.
+            </p>
+          </section>
 
-			<label class="toggle">☰</label>
+          <section class="card-panel z-depth-1 container grey darken-1">
+            <p><h5 class="orange-text"><strong>Contact Info</strong></h5></p>
 
-			<div class="content">
-				<div class="container">
-					<h3> About Us!</h3>
-					
-					<p>We are your dedicated team, working hard to bring you the best top quality<br>
-					Giraffe Leashes from around the world.</p>
+          </section>
 
-					<div class="dev-container">
-						<table>
-							<tr>
-								<td>
-									<div class="dev">
-										<img src="../images/contactus/rhett.png" width="100px" height="100px">
-										<p><strong> Rhett Amin </strong></p>
-										<p> 1060085 </p>
-									</div>
-								</td>
-								<td>
-									<div class="dev">
-										<img src="../images/contactus/james.png" width="100px" height="100px">
-										<p><strong> James Anthony </strong></p>
-										<p> 1135089 </p>
-									</div>
-								</td>
-							</tr>
-						</table>
-					</div>
+          <table>
+            <tr>
+              <td>
+                <div class="row">
+                  <div class="col s5 offset-s1">
+                    <section class="card-panel z-depth-1 container grey darken-1">
+                      <div class="row">
+                        <div id="devs" class="col s4">
+                          <img id="devs-img" class="circle responsive-img" src="../images/contactus/james.png" >
+                        </div>
+                        <div id="devs" class="col s8">
+                          <p id="devs-title">James Anthony</p>
+                          <p id="devs-num">1135089</p>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
 
-				</div>
+                  <div class="col s5">
+                    <section class="card-panel z-depth-1 container grey darken-1">
+                     <div class="row">
+                        <div id="devs" class="col s4">
+                          <img id="devs-img" class="circle responsive-img" src="../images/contactus/rhett.png" >
+                        </div>
+                        <div id="devs" class="col s8">
+                          <p id="devs-title">Rhett Amin</p>
+                          <p id="devs-num">1060085</p>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </table>
 
-			</div> <!-- END CONTENT -->
-		
-			<div class="sidebar">
-				<ul>
-					<a href="index.html"><li>HOME</li></a>
-					<a href="index.html"><li>CATALOGUE</li></a>
-					<a href="#"><li>CONTACT US</li></a>
-					<a href="login.html"><li>LOGIN</li></a>
-					<a href="registration.html"><li>REGISTER</li></a>
-				</ul>
-			</div>
+      </section>
+    </main>
 
-		</div>
-		
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"> </script>
-		<script src="../js/sidebar_toggle.js"></script>
+    <section class="sidemenu card-panel grey darken-1">
+      <ul>
+        <li id="brand" class="card materialize-red z-index-5">GLEASH</li>
+        <a class="card waves-effect waves-light red black-text" href="index.html"><li class="active">HOME</li></a>
+        <a class="card waves-effect waves-light red black-text" href="index.html"><li>CATALOGUE</li></a>
+        <a class="card waves-effect waves-light red black-text" href="#"><li>CONTACT US</li></a>
+        <a class="card waves-effect waves-light red black-text" href="login.html"><li>LOGIN</li></a>
+        <a class="card waves-effect waves-light red black-text" href="registration.html"><li>REGISTER</li></a>
+      </ul>
+    </section>
 
-	</body>
+    <!--************* Footer *************-->
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Footer Content</h5>
+            <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Links</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+            <ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+        © 2015 Copyright Text. Website by James Anthony and Rhett Amin
+        </div>
+      </div>
+    </footer>
 
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="../js/materialize.min.js"></script>
+    <script type="text/javascript" src="../js/sidemenu_toggle.js"></script>
+  </body>
 </html>
+        
