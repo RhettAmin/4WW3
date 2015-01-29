@@ -24,7 +24,7 @@
 	    var anchor = $(this), h;
 	    h = anchor.attr('href');
 	    e.preventDefault();
-	    anchor.animate({'opacity' : 50}, 200, function() {
+	    anchor.animate(5000, function() {
 	        window.location = h;
 	    });
 	});
