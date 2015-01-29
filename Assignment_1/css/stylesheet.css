@@ -8,6 +8,7 @@ i {
 	position: fixed;
 	top: 0px;
 	left: 15px;
+	z-index: 2;
 	-webkit-transition: all 0.45s ease-in-out 0;
   	-moz-transition: all 0.45s ease-in-out 0;
   	transition: all 0.45s ease-in-out 0;
