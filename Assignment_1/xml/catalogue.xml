@@ -1,48 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="cat_style.xsl"?>
-<!DOCTYPE LEASH_LIST "catalogue.dtd">
+<?xml-stylesheet type="text/xsl" href="../xsl/catalogue.xsl"?>
+<!DOCTYPE LEASH_LIST SYSTEM "catalogue.dtd">
 
 <LEASH_LIST> 									
-
-	<LEASH category="Sporty"> 		
-		<TITLE lang="en">Blue Wave</TITLE>
-		<PRICE> $13.99 </PRICE> 
-		<MAT> latex </MAT>			
-		<DESC>  							
-			<p>
-				Here is where the description will be placed.<br/>
-			</p>
-		</DESC>
-	</LEASH>
-
-	<LEASH category="Sporty"> 
-		<TITLE lang="en">Blue Wave</TITLE>
-		<PRICE> $13.99 </PRICE>
-		<DESC>
-			<p>
-				Here is where the description will be placed.<br/>
-			</p>
-		</DESC>
-	</LEASH>
-
-	<LEASH category="Sporty">
-		<TITLE lang="en">Blue Wave</TITLE>
-		<PRICE> $13.99 </PRICE>
-		<DESC>
-			<p>
-				Here is where the description will be placed.<br/>
-			</p>
-		</DESC>
-	</LEASH>
-
-	<LEASH category="Sporty">
-		<TITLE lang="en">Blue Wave</TITLE>
-		<PRICE> $13.99 </PRICE>
-		<DESC>
-			<p>
-				Here is where the description will be placed.<br/>
-			</p>
-		</DESC>
-	</LEASH>
-
+<LEASH> 		
+<TITLE>Blue Wave</TITLE>
+<PRICE>$13.99</PRICE> 
+<MAT>Latex</MAT>			
+<DESC>Here is where the description will be placed.</DESC>
+</LEASH>
 </LEASH_LIST>
