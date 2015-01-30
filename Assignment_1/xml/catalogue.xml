@@ -1,45 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="cat_style.xsl"?>
+<!DOCTYPE LEASH_LIST "catalogue.dtd">
 
-<Leash_list> 									<!-- List of Leashers (root)-->
+<LEASH_LIST> 									
 
-	<leash category="Sporty"> 					<!-- Categpory of Leash-->
-		<title lang="en">Blue Wave</title> 		<!-- Name of leash-->
-		<price> $13.99 </price> 				<!-- price of leash-->
-		<desc>  								<!-- Description of Leash-->
+	<LEASH category="Sporty"> 		
+		<TITLE lang="en">Blue Wave</TITLE>
+		<PRICE> $13.99 </PRICE> 
+		<MAT> latex </MAT>			
+		<DESC>  							
 			<p>
 				Here is where the description will be placed.<br/>
 			</p>
-		</desc>
-	</leash>
+		</DESC>
+	</LEASH>
 
-	<leash category="Sporty"> 
-		<title lang="en">Blue Wave</title>
-		<price> $13.99 </price>
-		<desc>
+	<LEASH category="Sporty"> 
+		<TITLE lang="en">Blue Wave</TITLE>
+		<PRICE> $13.99 </PRICE>
+		<DESC>
 			<p>
 				Here is where the description will be placed.<br/>
 			</p>
-		</desc>
-	</leash>
+		</DESC>
+	</LEASH>
 
-	<leash category="Sporty">
-		<title lang="en">Blue Wave</title>
-		<price> $13.99 </price>
-		<desc>
+	<LEASH category="Sporty">
+		<TITLE lang="en">Blue Wave</TITLE>
+		<PRICE> $13.99 </PRICE>
+		<DESC>
 			<p>
 				Here is where the description will be placed.<br/>
 			</p>
-		</desc>
-	</leash>
+		</DESC>
+	</LEASH>
 
-	<leash category="Sporty">
-		<title lang="en">Blue Wave</title>
-		<price> $13.99 </price>
-		<desc>
+	<LEASH category="Sporty">
+		<TITLE lang="en">Blue Wave</TITLE>
+		<PRICE> $13.99 </PRICE>
+		<DESC>
 			<p>
 				Here is where the description will be placed.<br/>
 			</p>
-		</desc>
-	</leash>
+		</DESC>
+	</LEASH>
 
-</Leash_list>
+</LEASH_LIST>

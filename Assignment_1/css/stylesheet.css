@@ -4,16 +4,16 @@ body {
 label {
 	font-weight: bold;
 }
-i {
-	position: fixed;
-	top: 0px;
-	left: 15px;
-	z-index: 2;
-	-webkit-transition: all 0.45s ease-in-out 0;
-  	-moz-transition: all 0.45s ease-in-out 0;
-  	transition: all 0.45s ease-in-out 0;
+.foot{
+	background-color: #81c784 !important;
+	position:relative;
+	bottom:0;
+	left:0;
+	width:100%;
 }
-
+.btn-color {
+	background-color: #81c784 !important;
+}
 
 #giraffe-landscape > img{
  	width: 100%;
@@ -30,6 +30,17 @@ i {
 /**************************/
 /******** Sidemenu ********/
 /**************************/
+
+#toggle-sidemenu {
+	position: fixed;
+	top: 0px;
+	left: 15px;
+	z-index: 2;
+	-webkit-transition: all 0.45s ease-in-out 0;
+  	-moz-transition: all 0.45s ease-in-out 0;
+  	transition: all 0.45s ease-in-out 0;
+}
+
 .sidemenu {
 	position: fixed;
 	top: 0px;
@@ -87,6 +98,10 @@ i {
 	position: relative;
 	top: -30px;
 }
+.regis-buttons {
+	margin-top: 15px;
+}
+
 
 /**************************/
 /****** Registration ******/
@@ -191,80 +206,51 @@ i {
 	position: relative;
 	top: -30px;
 }
-
-#devs{
-	height: 50px;
+.devs-titlebar {
+	position: relative;
+	top: -30px;
+	left: -20px;
+	width: 250px;
+	height: 55px;
+	padding: 0px;
+	margin: 0px;
 }
-#devs-img {
-	border: 1px solid #ffb300;
+.devs{
+	max-width: 250px;
+	margin: auto;
 }
-#devs-text{
-	height: 60px;
+.devs-img {
+	position: relative;
+	top: 17px;
+	width: 75px;
+	height: 75px;
+	border: 2px solid #eceff1;
 }
-#devs-title {
+.devs-text {
+	position: relative;
+	top: 27px;
+	left: 10px;
+}
+.devs-title {
 	margin-top: 5px;
-	margin-bottom: 0px;
-	font-size: 20px;
-	font-weight: bold;
-}
-#devs-num {
-	margin-top: 0px;
 	margin-bottom: 0px;
 	font-size: 16px;
 	font-weight: bold;
 }
-
-.dev-container {
-	float: none;
-	text-align: center;
-	margin: auto;
-	height: 300px;
-	display:inline-block;
+.devs-num {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-size: 16px;
+	font-weight: bold;
+	z-index: 1;
 }
-.dev-container > table {
-	height: 100%;
+.devs-top-card{
+	height: 50px;
+	z-index: 2;
 }
-
-.dev {
-	width: 200px;
-	height: 100%;
-	margin: auto;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	display:inline-block;
-	color: #ff9547;
-	background: linear-gradient(#555, #444);
+.devs-bottom-card {
+	position: relative;
+	top: -20px;
+	z-index: 1;
+	height: 50px;
 }
-.dev > img {
-	border-radius: 50%;
-	border: 2px solid #ff9547;
-}
-.dev > p {
-	margin: auto;
-}
-
-.center {
-	text-align: center;
-	border: 1px solid black;
-	width: 25%;
-	margin-left:37%;
-}
-
-/**************************/
-/********* Misc. **********/
-/**************************/
-
-.heightspacer1{
-	height: 1px;
-}
-.heightspacer10 {
-	height: 10px;
-}
-.heightspacer15 {
-	height: 15px;
-}
-
-.widthspacer10 {
-	width: 10px;
-}
-

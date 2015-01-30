@@ -2105,7 +2105,7 @@ img.responsive-img {
 footer.page-footer {
   margin-top: 20px;
   padding-top: 20px;
-  background-color: #ee6e73; }
+  background-color: #81c784; }
   footer.page-footer .footer-copyright {
     overflow: hidden;
     height: 50px;
@@ -4789,6 +4789,8 @@ span.badge {
       margin-left: 6.33333%; }
     .row .col.offset-s1 {
       margin-left: 8.33333%; }
+    .row .col.offset-s1-5 {
+      margin-left: 12.33333%; }
     .row .col.offset-s2 {
       margin-left: 16.66667%; }
     .row .col.offset-s3 {
