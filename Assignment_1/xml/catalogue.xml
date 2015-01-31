@@ -8,13 +8,78 @@
 <!ELEMENT PRICE (#PCDATA)>
 <!ELEMENT MAT (#PCDATA)>
 <!ELEMENT DESC (#PCDATA)>
+<!ELEMENT IMG (#PCDATA)>
 ]>
 
-<CATALOGUE> 									
+<CATALOGUE> 							
 	<LEASH> 		
 		<TITLE>Blue Wave</TITLE>
 		<PRICE>$13.99</PRICE> 
 		<MAT>Latex</MAT>			
 		<DESC>Words</DESC>
+		<IMG>../images/fishimages/clownfish.jpg</IMG>
+	</LEASH>
+	<LEASH> 		
+		<TITLE>Blue Wave</TITLE>
+		<PRICE>$13.99</PRICE> 
+		<MAT>Latex</MAT>			
+		<DESC>Words</DESC>
+		<IMG>../images/fishimages/clownfish.jpg</IMG>
+	</LEASH>
+	<LEASH> 		
+		<TITLE>Blue Wave</TITLE>
+		<PRICE>$13.99</PRICE> 
+		<MAT>Latex</MAT>			
+		<DESC>Words</DESC>
+		<IMG>../images/fishimages/clownfish.jpg</IMG>
+	</LEASH>
+	<LEASH> 		
+		<TITLE>Blue Wave</TITLE>
+		<PRICE>$13.99</PRICE> 
+		<MAT>Latex</MAT>			
+		<DESC>Words</DESC>
+		<IMG>../images/fishimages/clownfish.jpg</IMG>
+	</LEASH>
+	<LEASH> 		
+		<TITLE>Blue Wave</TITLE>
+		<PRICE>$13.99</PRICE> 
+		<MAT>Latex</MAT>			
+		<DESC>Words</DESC>
+		<IMG>../images/fishimages/clownfish.jpg</IMG>
+	</LEASH>
+	<LEASH> 		
+		<TITLE>Blue Wave</TITLE>
+		<PRICE>$13.99</PRICE> 
+		<MAT>Latex</MAT>			
+		<DESC>Words</DESC>
+		<IMG>../images/fishimages/clownfish.jpg</IMG>
+	</LEASH>
+	<LEASH> 		
+		<TITLE>Blue Wave</TITLE>
+		<PRICE>$13.99</PRICE> 
+		<MAT>Latex</MAT>			
+		<DESC>Words</DESC>
+		<IMG>../images/fishimages/clownfish.jpg</IMG>
+	</LEASH>
+	<LEASH> 		
+		<TITLE>Blue Wave</TITLE>
+		<PRICE>$13.99</PRICE> 
+		<MAT>Latex</MAT>			
+		<DESC>Words</DESC>
+		<IMG>../images/fishimages/clownfish.jpg</IMG>
+	</LEASH>
+	<LEASH> 		
+		<TITLE>Blue Wave</TITLE>
+		<PRICE>$13.99</PRICE> 
+		<MAT>Latex</MAT>			
+		<DESC>Words</DESC>
+		<IMG>../images/fishimages/clownfish.jpg</IMG>
+	</LEASH>
+	<LEASH> 		
+		<TITLE>Blue Wave</TITLE>
+		<PRICE>$13.99</PRICE> 
+		<MAT>Latex</MAT>			
+		<DESC>Words</DESC>
+		<IMG>../images/fishimages/clownfish.jpg</IMG>
 	</LEASH>
 </CATALOGUE>
