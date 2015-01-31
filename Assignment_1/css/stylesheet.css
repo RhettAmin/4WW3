@@ -87,13 +87,33 @@ label {
 }
 
 /**************************/
-/****** Registration_mat ******/
+/****** Registration ******/
 /**************************/
 #regis {
 	position: relative;
 }
 .regis-buttons {
 	margin-top: 15px;
+}
+
+/**************************/
+/******* Catalogue ********/
+/**************************/
+.card-title-text {
+	position: relative;
+	bottom: 0px;
+}
+.card-content-box {
+	position: relative;
+	top: -6px;
+	margin-bottom: -8px;
+}
+
+/**************************/
+/******** Sitemap *********/
+/**************************/
+.flow-text {
+	padding-left: 20px;
 }
 
 /**************************/

@@ -14,72 +14,107 @@
 <CATALOGUE> 							
 	<LEASH> 		
 		<TITLE>Blue Wave</TITLE>
-		<PRICE>$13.99</PRICE> 
-		<MAT>Latex</MAT>			
-		<DESC>Words</DESC>
-		<IMG>../images/fishimages/clownfish.jpg</IMG>
+		<PRICE>$149.99</PRICE> 
+		<MAT>Rope</MAT>			
+		<DESC>Premium Gleash</DESC>
+		<IMG>../images/leashes/l11.jpg</IMG>
 	</LEASH>
 	<LEASH> 		
-		<TITLE>Blue Wave</TITLE>
-		<PRICE>$13.99</PRICE> 
-		<MAT>Latex</MAT>			
-		<DESC>Words</DESC>
-		<IMG>../images/fishimages/clownfish.jpg</IMG>
+		<TITLE>Ram Rod</TITLE>
+		<PRICE>$199.99</PRICE> 
+		<MAT>Polyester</MAT>			
+		<DESC>Premium Gleash</DESC>
+		<IMG>../images/leashes/l1.jpg</IMG>
 	</LEASH>
 	<LEASH> 		
-		<TITLE>Blue Wave</TITLE>
-		<PRICE>$13.99</PRICE> 
-		<MAT>Latex</MAT>			
-		<DESC>Words</DESC>
-		<IMG>../images/fishimages/clownfish.jpg</IMG>
+		<TITLE>Old Duster</TITLE>
+		<PRICE>$130.99</PRICE> 
+		<MAT>Leather</MAT>			
+		<DESC>Premium Gleash</DESC>
+		<IMG>../images/leashes/l10.jpg</IMG>
 	</LEASH>
 	<LEASH> 		
-		<TITLE>Blue Wave</TITLE>
-		<PRICE>$13.99</PRICE> 
-		<MAT>Latex</MAT>			
-		<DESC>Words</DESC>
-		<IMG>../images/fishimages/clownfish.jpg</IMG>
+		<TITLE>Ocean Breeze</TITLE>
+		<PRICE>$1337.00</PRICE> 
+		<MAT>Silk</MAT>			
+		<DESC>Premium Gleash</DESC>
+		<IMG>../images/leashes/l12.png</IMG>
 	</LEASH>
 	<LEASH> 		
-		<TITLE>Blue Wave</TITLE>
-		<PRICE>$13.99</PRICE> 
-		<MAT>Latex</MAT>			
-		<DESC>Words</DESC>
-		<IMG>../images/fishimages/clownfish.jpg</IMG>
+		<TITLE>Classic Ropey</TITLE>
+		<PRICE>$100.00</PRICE> 
+		<MAT>Rope</MAT>			
+		<DESC>Premium Gleash</DESC>
+		<IMG>../images/leashes/l13.jpg</IMG>
 	</LEASH>
 	<LEASH> 		
-		<TITLE>Blue Wave</TITLE>
-		<PRICE>$13.99</PRICE> 
-		<MAT>Latex</MAT>			
-		<DESC>Words</DESC>
-		<IMG>../images/fishimages/clownfish.jpg</IMG>
+		<TITLE>OJ Gleash</TITLE>
+		<PRICE>$250.45</PRICE> 
+		<MAT>Carbon Nanotubes</MAT>			
+		<DESC>Premium Gleash</DESC>
+		<IMG>../images/leashes/l14.jpg</IMG>
 	</LEASH>
 	<LEASH> 		
-		<TITLE>Blue Wave</TITLE>
-		<PRICE>$13.99</PRICE> 
-		<MAT>Latex</MAT>			
-		<DESC>Words</DESC>
-		<IMG>../images/fishimages/clownfish.jpg</IMG>
+		<TITLE>Silverado</TITLE>
+		<PRICE>$500.00</PRICE> 
+		<MAT>Silver</MAT>			
+		<DESC>Premium Gleash</DESC>
+		<IMG>../images/leashes/l15.jpg</IMG>
 	</LEASH>
 	<LEASH> 		
-		<TITLE>Blue Wave</TITLE>
-		<PRICE>$13.99</PRICE> 
-		<MAT>Latex</MAT>			
-		<DESC>Words</DESC>
-		<IMG>../images/fishimages/clownfish.jpg</IMG>
+		<TITLE>Perfectly Appropriate</TITLE>
+		<PRICE>$875.00</PRICE> 
+		<MAT>Gortex</MAT>			
+		<DESC>Premium Gleash</DESC>
+		<IMG>../images/leashes/l2.jpg</IMG>
 	</LEASH>
 	<LEASH> 		
-		<TITLE>Blue Wave</TITLE>
-		<PRICE>$13.99</PRICE> 
-		<MAT>Latex</MAT>			
-		<DESC>Words</DESC>
-		<IMG>../images/fishimages/clownfish.jpg</IMG>
+		<TITLE>Devishly Prada</TITLE>
+		<PRICE>$375.00</PRICE> 
+		<MAT>Leather</MAT>			
+		<DESC>Premium Gleash</DESC>
+		<IMG>../images/leashes/l3.jpg</IMG>
 	</LEASH>
 	<LEASH> 		
-		<TITLE>Blue Wave</TITLE>
-		<PRICE>$13.99</PRICE> 
+		<TITLE>Monkey Fist</TITLE>
+		<PRICE>$600.00</PRICE> 
+		<MAT>Leather*</MAT>			
+		<DESC>Premium Gleash</DESC>
+		<IMG>../images/leashes/l4.jpg</IMG>
+	</LEASH>
+	<LEASH> 		
+		<TITLE>Purple Hazee</TITLE>
+		<PRICE>$420.00</PRICE> 
+		<MAT>Hemp</MAT>			
+		<DESC>Premium Gleash</DESC>
+		<IMG>../images/leashes/l5.jpeg</IMG>
+	</LEASH>
+	<LEASH> 		
+		<TITLE>The "Anaconda"</TITLE>
+		<PRICE>$650.75</PRICE> 
+		<MAT>Snakeskin</MAT>			
+		<DESC>Premium Gleash</DESC>
+		<IMG>../images/leashes/l6.jpg</IMG>
+	</LEASH>
+	<LEASH> 		
+		<TITLE>'Murica</TITLE>
+		<PRICE>$900.11</PRICE> 
+		<MAT>Cotton</MAT>			
+		<DESC>Premium Gleash</DESC>
+		<IMG>../images/leashes/l7.jpg</IMG>
+	</LEASH>
+	<LEASH> 		
+		<TITLE>Fisherman's Friend</TITLE>
+		<PRICE>$756.24</PRICE> 
+		<MAT>Rope</MAT>			
+		<DESC>Premium Gleash</DESC>
+		<IMG>../images/leashes/l8.jpg</IMG>
+	</LEASH>
+	<LEASH> 		
+		<TITLE>Restrainer</TITLE>
+		<PRICE>$666.66</PRICE> 
 		<MAT>Latex</MAT>			
-		<DESC>Words</DESC>
-		<IMG>../images/fishimages/clownfish.jpg</IMG>
+		<DESC>Premium Gleash</DESC>
+		<IMG>../images/leashes/l9.jpg</IMG>
 	</LEASH>
 </CATALOGUE>
