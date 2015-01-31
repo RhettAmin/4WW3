@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="../xsl/catalogue.xsl"?>
-<!DOCTYPE LEASH_LIST SYSTEM "catalogue.dtd">
+<?xml-stylesheet href="catalogue.xsl" type="text/xsl" ?>
 
-<LEASH_LIST> 									
-<LEASH> 		
-<TITLE>Blue Wave</TITLE>
-<PRICE>$13.99</PRICE> 
-<MAT>Latex</MAT>			
-<DESC>Here is where the description will be placed.</DESC>
-</LEASH>
-</LEASH_LIST>
+<!DOCTYPE CATALOGUE [
+<!ELEMENT CATALOGUE (LEASH*)>
+<!ELEMENT LEASH (TITLE,PRICE,MAT,DESC)>
+<!ELEMENT TITLE (#PCDATA)>
+<!ELEMENT PRICE (#PCDATA)>
+<!ELEMENT MAT (#PCDATA)>
+<!ELEMENT DESC (#PCDATA)>
+]>
+
+<CATALOGUE> 									
+	<LEASH> 		
+		<TITLE>Blue Wave</TITLE>
+		<PRICE>$13.99</PRICE> 
+		<MAT>Latex</MAT>			
+		<DESC>Words</DESC>
+	</LEASH>
+</CATALOGUE>
