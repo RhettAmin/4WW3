@@ -31,6 +31,17 @@ label {
  	height: 100%;
 }
 
+.input-field input[type=text]:focus + label, .input-field input[type=password]:focus + label, .input-field input[type=email]:focus + label, .input-field input[type=url]:focus + label, .input-field input[type=date]:focus + label, .input-field input[type=tel]:focus + label, .input-field input[type=number]:focus + label, .input-field input[type=search]:focus + label, .input-field textarea:focus.materialize-textarea + label {
+    	color: #66bb6a !important;
+     }
+
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=url]:focus, input[type=date]:focus, input[type=tel]:focus, input[type=number]:focus, input[type=search]:focus, textarea:focus.materialize-textarea {
+  border-bottom: 1px solid #66bb6a !important;
+  -webkit-box-shadow: 0 1px 0 0 #66bb6a !important;
+  -moz-box-shadow: 0 1px 0 0 #66bb6a !important;
+  box-shadow: 0 1px 0 0 #66bb6a !important; 
+}
+
 /**************************/
 /******** Sidemenu ********/
 /**************************/
@@ -97,9 +108,6 @@ label {
 /**************************/
 /****** Registration ******/
 /**************************/
-#regis {
-	position: relative;
-}
 .regis-buttons {
 	margin-top: 15px;
 }
@@ -107,6 +115,11 @@ label {
 /**************************/
 /******* Catalogue ********/
 /**************************/
+
+.catalogue-card {
+	padding-bottom: 0px;
+}
+
 .card-title-text {
 	margin-top: -15px;
 	margin-bottom: -15px;
@@ -128,6 +141,11 @@ label {
 .card-details-text {
 	position: relative;
 	left: 30px;
+}
+
+[type="checkbox"]:checked + label:before {
+	border-right: 2px solid #66bb6a;
+	border-bottom: 2px solid #66bb6a;
 }
 
 /**************************/

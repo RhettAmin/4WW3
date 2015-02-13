@@ -23,14 +23,14 @@
       </section>
 
       <section id="regis" class="card-panel z-depth-1-half container grey lighten-4">
-          <header><h4><strong>Registration</strong></h4></header>
-          <section>
-            <div class="row card-panel z-depth-1 grey lighten-3">
+          <h4><strong>Registration</strong></h4><hr>
+          
+          <form class="row card-panel z-depth-1 grey lighten-3">
               
               <!--************ NAME ******************-->
-              <div class="input-field col s6">
-                <input id="icon_fname" type="text" class="validate">
-                <label for="icon_fname">First Name</label>
+              <div class="input-field col s6" >
+                  <input id="icon_fname" type="text" class="validate" >
+                  <label for="icon_fname">First Name</label>
               </div>
               <div class="input-field col s6">
                 <input id="icon_lname" type="text" class="validate">
@@ -39,26 +39,36 @@
 
               <!--************ CONTACT ******************-->
               <div class="input-field col s6">
-                <input id="icon_email" type="email" class="validate">
-                <label for="icon_email">Email</label>
+                <div class="tooltipped" data-position="top" data-delay="25" data-tooltip="Format: account@domain.ext">
+                  <input id="icon_email" type="text" class="validate">
+                  <label for="icon_email">Email</label>
+                </div>
               </div>
               <div class="input-field col s6">
-                <input id="icon_phone" type="tel" class="validate">
-                <label for="icon_phone">Phone Number</label>
+                <div class="tooltipped" data-position="top" data-delay="25" data-tooltip="Format: 123-456-7890">
+                  <input id="icon_phone" type="tel" class="validate">
+                  <label for="icon_phone">Phone Number</label>
+                </div>
               </div>
 
               <!--************ ACCOUNT ******************-->
               <div class="input-field col s4">
-                <input id="icon_user" type="text" class="validate">
-                <label for="icon_user">Username</label>
+                 <div class="tooltipped" data-position="top" data-delay="25" data-tooltip="6 Characters min">
+                  <input id="icon_user" type="text" class="validate">
+                  <label for="icon_user">Username</label>
+                </div>
               </div>
               <div class="input-field col s4">
-                <input id="icon_pass" type="password" class="validate">
-                <label for="icon_pass">Password</label>
+               <div class="tooltipped" data-position="top" data-delay="25" data-tooltip="6 Characters min">
+                  <input id="icon_pass" type="password" class="validate">
+                  <label for="icon_pass">Password</label>
+                </div>
               </div>
               <div class="input-field col s4">
-                <input id="icon_cpass" type="password" class="validate">
-                <label for="icon_cpass">Confirm Password</label>
+                <div class="tooltipped" data-position="top" data-delay="25" data-tooltip="6 Characters min">
+                  <input id="icon_cpass" type="password" class="validate">
+                  <label for="icon_cpass">Confirm Password</label>
+                </div>
               </div>
 
               <!--************ ADDRESS ******************-->
@@ -85,24 +95,25 @@
                 <label for="icon_province">Province</label>
               </div>
               <div class="input-field col s2">
-                <input id="icon_postal" type="text" class="validate">
-                <label for="icon_postal">Postal Code</label>
+                <div class="tooltipped" data-position="top" data-delay="25" data-tooltip="Format: 1a3 b5c">
+                  <input id="icon_postal" type="text" class="validate">
+                  <label for="icon_postal">Postal Code</label>
+                </div>
               </div>
 
               <!--********** BUTTONS **************-->
               <div class="col s3 offset-s3 regis-buttons">
-                <button class="btn btn-color waves-effect waves-light" type="submit" name="action">Submit
+                <button id="submit" class="btn btn-color waves-effect waves-light" name="action">Submit
                 </button>
               </div>
 
               <div class="col s3 regis-buttons">
-                <button class="btn btn-color waves-effect waves-light" type="reset" name="action">reset
+                <button id="rsubmiteset" class="btn btn-color waves-effect waves-light" type="reset" name="action">Reset
                 </button>
               </div>
 
-            </div> <!-- END ROW -->
-
-          </section>   
+          </form> <!-- END ROW -->
+ 
       </section>
     </main>
 
@@ -139,7 +150,7 @@
       </div>
       <div class="footer-copyright foot-copy">
         <div class="container">
-          © 2015 Copyright Text. Website by James Anthony and Rhett Amin
+          © 2015 Copyright. Website by James Anthony and Rhett Amin
         </div>
       </div>
     </footer>
@@ -149,5 +160,6 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="../js/materialize.min.js"></script>
     <script type="text/javascript" src="../js/sidemenu_toggle.js"></script>
+    <script type="text/javascript" src="../js/registration.js"></script>
   </body>
 </html>
