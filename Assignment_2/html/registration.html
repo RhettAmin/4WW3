@@ -24,50 +24,50 @@
 
       <section id="regis" class="card-panel z-depth-1-half container grey lighten-4">
           <h4><strong>Registration</strong></h4><hr>
-          
-          <form class="row card-panel z-depth-1 grey lighten-3">
-              
+          <label class="required">Red = Required</label>
+          <form id="regis_form"class="row card-panel z-depth-1 grey lighten-3">
+  
               <!--************ NAME ******************-->
-              <div class="input-field col s6" >
-                  <input id="icon_fname" type="text" class="validate" >
-                  <label for="icon_fname">First Name</label>
+              <div class="input-field col s6">
+                  <input id="icon_fname" type="text" class="validate">
+                  <label for="icon_fname" class="required">First Name</label>
               </div>
               <div class="input-field col s6">
                 <input id="icon_lname" type="text" class="validate">
-                <label for="icon_lname">Last Name</label>
+                <label for="icon_lname" class="required">Last Name</label>
               </div>
 
               <!--************ CONTACT ******************-->
               <div class="input-field col s6">
                 <div class="tooltipped" data-position="top" data-delay="25" data-tooltip="Format: account@domain.ext">
                   <input id="icon_email" type="text" class="validate">
-                  <label for="icon_email">Email</label>
+                  <label for="icon_email" class="required">Email</label>
                 </div>
               </div>
               <div class="input-field col s6">
                 <div class="tooltipped" data-position="top" data-delay="25" data-tooltip="Format: 123-456-7890">
                   <input id="icon_phone" type="tel" class="validate">
-                  <label for="icon_phone">Phone Number</label>
+                  <label for="icon_phone" class="required">Phone Number</label>
                 </div>
               </div>
 
               <!--************ ACCOUNT ******************-->
               <div class="input-field col s4">
                  <div class="tooltipped" data-position="top" data-delay="25" data-tooltip="6 Characters min">
-                  <input id="icon_user" type="text" class="validate">
-                  <label for="icon_user">Username</label>
+                  <input id="icon_user" name="username" type="text" class="validate">
+                  <label for="icon_user" class="required">Username</label>
                 </div>
               </div>
               <div class="input-field col s4">
                <div class="tooltipped" data-position="top" data-delay="25" data-tooltip="6 Characters min">
                   <input id="icon_pass" type="password" class="validate">
-                  <label for="icon_pass">Password</label>
+                  <label for="icon_pass" class="required">Password</label>
                 </div>
               </div>
               <div class="input-field col s4">
                 <div class="tooltipped" data-position="top" data-delay="25" data-tooltip="6 Characters min">
                   <input id="icon_cpass" type="password" class="validate">
-                  <label for="icon_cpass">Confirm Password</label>
+                  <label for="icon_cpass" class="required">Confirm Password</label>
                 </div>
               </div>
 
@@ -78,26 +78,26 @@
               </div>
               <div class="input-field col s2">
                 <input id="icon_streetnum" type="number" class="validate">
-                <label for="icon_streetnum">Street #</label>
+                <label for="icon_streetnum" class="required">Street #</label>
               </div>
               <div class="input-field col s8">
                 <input id="icon_streetname" type="text" class="validate">
-                <label for="icon_streetname">Street Name</label>
+                <label for="icon_streetname" class="required">Street Name</label>
               </div>
 
               <!--************ LOCATION ******************-->
               <div class="input-field col s5">
                 <input id="icon_city" type="text" class="validate">
-                <label for="icon_city">City</label>
+                <label for="icon_city" class="required">City</label>
               </div>
               <div class="input-field col s5">
                 <input id="icon_province" type="text" class="validate">
-                <label for="icon_province">Province</label>
+                <label for="icon_province" class="required">Province</label>
               </div>
               <div class="input-field col s2">
                 <div class="tooltipped" data-position="top" data-delay="25" data-tooltip="Format: 1a3 b5c">
                   <input id="icon_postal" type="text" class="validate">
-                  <label for="icon_postal">Postal Code</label>
+                  <label for="icon_postal" class="required">Postal Code</label>
                 </div>
               </div>
 
@@ -126,7 +126,7 @@
         <li><a class="card waves-effect waves-light green lighten-2 black-text" href="contact.html">CONTACT US</a></li>
         <li><a class="card waves-effect waves-light green lighten-2 black-text" href="login.html">LOGIN</a></li>
         <li><a class="card waves-effect waves-light green lighten-2 black-text" href="#">REGISTER</a></li>
-	<li><a class="card waves-effect waves-light green lighten-2 black-text" href="sitemap.html">SITE MAP</a></li>
+	      x<li><a class="card waves-effect waves-light green lighten-2 black-text" href="sitemap.html">SITE MAP</a></li>
       </ul>
     </section>
 

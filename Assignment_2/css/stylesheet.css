@@ -112,6 +112,10 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, inp
 	margin-top: 15px;
 }
 
+.required {
+	color: #e57373 !important;
+}
+
 /**************************/
 /******* Catalogue ********/
 /**************************/
