@@ -21,12 +21,9 @@ $(document).ready(function () {
 
 	/* Delay anchor tag href links*/
 	$('a').click(function(e) {
-	    var anchor = $(this), h;
-	    h = anchor.attr('href');
+	    var h = $(this).attr('href');
 	    e.preventDefault();
-	    anchor.animate(5000, function() {
-	        window.location = h;
-	    });
+	    setTimeout(function(){ window.location = h; }, 300);
 	});
 
 });

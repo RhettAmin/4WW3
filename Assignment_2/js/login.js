@@ -1,4 +1,9 @@
 $(document).ready(function(){
+
+	for (var i = 0; i < localStorage.length; i++) {
+		console.log(JSON.parse(localStorage.getItem().key(i));)
+	}
+
 	$("#submit_log").click(function(e) {
 		e.preventDefault();
 
