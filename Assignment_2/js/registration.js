@@ -1,9 +1,8 @@
 $(document).ready(function(){
-
 	var name_regex = /[a-zA-Z]{1,25}/;
 	var email_regex = /([a-z]*\@[a-z]*\.[a-z]*)/;
 	var phone_regex = /[0-9]{3}\-[0-9]{3}\-[0-9]{4}/;
-	var user_regex = /[a-z]{5,}/;
+	var user_regex = /[a-zA-Z]{5,}/;
 	var addr_regex = /[0-9]{1,5}/;
 	var postal_regex = /[a-zA-Z0-9]{3}\ [a-zA-Z0-9]{3}/;
 
@@ -98,26 +97,20 @@ $(document).ready(function(){
 		e.preventDefault();
 
 		if (jQuery.inArray( 1, error ) == -1 ) {
+
 			// Check browser support 
 			if (typeof(Storage) != "undefined") {
-			    // Store
-			    var items = {username: $("#icon_user").val(), password: $("#icon_pass").val()};
-				localStorage.setItem('user', JSON.stringify(items));
+			    
 
-			    //var test = JSON.parse(localStorage.getItem('user'));
-				//console.log( test.username, test.password );
-				toast("Thank you for registering " + $("#icon_user").val() + "!", 2000);
-
-				
-				//var delay = 1000; //Your delay in milliseconds
-				setTimeout(function(){ window.location = "login.html"; }, 1000);
-				$('#regis_form').trigger("reset");
-				/*
-				
-			    e.preventDefault();
-			    anchor.animate(10000, function() {
-			        window.location = h;
-			    }); */
+				if (localStorage.getItem("user_"+$("#icon_user").val()) === null) {
+					var items = {username: $("#icon_user").val(), password: $("#icon_pass").val()};
+					localStorage.setItem("user_"+ $("#icon_user").val(), JSON.stringify(items));
+					toast("Thank you for registering " + $("#icon_user").val() + "!", 2000);
+					setTimeout(function(){ window.location = "login.html"; }, 2000);
+					$('#regis_form').trigger("reset");
+				} else {
+					toast("That Username is taken, please try again" , 2000);
+				}			
 
 			} else {
 			    document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
