@@ -8,18 +8,19 @@ $(document).ready(function(){
 	var postal_regex = /[a-zA-Z0-9]{3}\ [a-zA-Z0-9]{3}/;
 
 	var error = [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ];
+	var allGood = 0;
 	
+	console.log( error);
 
 		/****************** NAME ******************/
 		// First Name
 		$('#icon_fname').blur(function() {
-			console.log("test");
 			if ( !name_regex.test($("#icon_fname").val()) ) {
 				toast('First Name is invalid', 2000);
 			}else { error[0] = 0; }
 		});
 		// Last Name
-		$('#icon_fname').blur(function() {
+		$('#icon_lname').blur(function() {
 			if ( !name_regex.test($("#icon_lname").val()) ) {
 				toast('Last Name is invalid', 2000);
 			}else { error[1] = 0; }
@@ -27,12 +28,12 @@ $(document).ready(function(){
 
 		/****************** CONTACT ******************/
 		// Email
-		$('#icon_fname').blur(function() {
+		$('#icon_email').blur(function() {
 			if ( !email_regex.test($("#icon_email").val()) ) {
 				toast('Email is invalid', 2000);
 			}else { error[2] = 0; }
 		});
-		$('#icon_fname').blur(function() {
+		$('#icon_phone').blur(function() {
 			if ( !phone_regex.test($("#icon_phone").val()) ) {
 				toast('Phone number is invalid', 2000);
 			}else { error[3] = 0; }
@@ -40,19 +41,19 @@ $(document).ready(function(){
 
 		/****************** ACCOUNT ******************/
 		// Username
-		$('#icon_fname').blur(function() {
+		$('#icon_user').blur(function() {
 			if ( !user_regex.test($("#icon_user").val()) ) {
 				toast('Username is invalid', 2000);
 			}else { error[4] = 0; }
 		});
 		// Password
-		$('#icon_fname').blur(function() {
+		$('#icon_pass').blur(function() {
 			if ( !user_regex.test($("#icon_pass").val()) ) {
 				toast('Password is invalid', 2000);
 			}else { error[5] = 0; }
 		});
 		// Confirm Password
-		$('#icon_fname').blur(function() {
+		$('#icon_cpass').blur(function() {
 			if ( $("#icon_cpass").val() != $("#icon_pass").val() ) {
 				toast('Password confirmation does not match password', 2000);
 			}else { error[6] = 0; }
@@ -60,13 +61,13 @@ $(document).ready(function(){
 
 		/****************** ADDRESS ******************/
 		// Street #
-		$('#icon_fname').blur(function() {
+		$('#icon_streetnum').blur(function() {
 			if ( !addr_regex.test($("#icon_streetnum").val()) ) {
 				toast('Street Number is invalid', 2000);
 			}else { error[7] = 0; }
 		});
 		// Street Name
-		$('#icon_fname').blur(function() {
+		$('#icon_streetname').blur(function() {
 			if ( !name_regex.test($("#icon_streetname").val()) ) {
 				toast('Street Name is invalid', 2000);
 			}else { error[8] = 0; }
@@ -74,48 +75,58 @@ $(document).ready(function(){
 
 		/****************** LOCATION ******************/
 		// City
-		$('#icon_fname').blur(function() {
+		$('#icon_city').blur(function() {
 			if ( !name_regex.test($("#icon_city").val()) ) {
 				toast('City is invalid', 2000);
 			}else { error[9] = 0; }
 		});
 		// Province
-		$('#icon_fname').blur(function() {
+		$('#icon_province').blur(function() {
 			if ( !name_regex.test($("#icon_province").val()) ) {
 				toast('Province is invalid', 2000);
 			}else { error[10] = 0; }
 		});
 		// Postal Code
-		$('#icon_fname').blur(function() {
+		$('#icon_postal').blur(function() {
 			if ( !postal_regex.test($("#icon_postal").val()) ) {
 				toast('Postal Code is invalid', 2000);
 			}else { error[11] = 0; }
 		});
 
 
-	$("#submit").click(function(e){
+	$("#submit_reg").click(function(e) {
 		e.preventDefault();
-		if (error.length == 0) {
+
+		if (jQuery.inArray( 1, error ) == -1 ) {
 			// Check browser support 
-			
 			if (typeof(Storage) != "undefined") {
 			    // Store
-			    // var user = $("#icon_user").val();
-			    // var pass =  $("#icon_pass").val();
 			    var items = {username: $("#icon_user").val(), password: $("#icon_pass").val()};
 				localStorage.setItem('user', JSON.stringify(items));
 
-			    //localStorage.setItem("User", {username: user, password: pass});
-				var test = JSON.parse(localStorage.getItem('user'));
-				console.log( test.username, test.password );
-				toast("Thank you for registering " + test.username , 2000);
+			    //var test = JSON.parse(localStorage.getItem('user'));
+				//console.log( test.username, test.password );
+				toast("Thank you for registering " + $("#icon_user").val() + "!", 2000);
+
 				
+				//var delay = 1000; //Your delay in milliseconds
+				setTimeout(function(){ window.location = "login.html"; }, 1000);
+				$('#regis_form').trigger("reset");
+				/*
+				
+			    e.preventDefault();
+			    anchor.animate(10000, function() {
+			        window.location = h;
+			    }); */
+
 			} else {
 			    document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
 			} 		
-		} 
-
+		} else {
+			toast("There is a problem with your registration" , 2000);
+		}
 
 
 	});
+
 });
