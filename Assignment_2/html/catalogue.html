@@ -7,7 +7,7 @@
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="../css/materialize.css"  media="screen,projection"/>
      <link type="text/css" rel="stylesheet" href="../css/stylesheet.css"  media="screen,projection"/>
-    <title>Gleash - Catalogue</title> 
+    <title>Gleash - Catalogue</title>
   </head>
 
   <body class="grey lighten-4">
@@ -19,11 +19,19 @@
     	  <section id="giraffe-landscape" class="grey lighten-1 z-depth-1">
         	<img src="../images/gleash_landscape.jpg"> 
       	</section>
-<!--*********************** CATALOGUE ITEMS *****************************************--> 
+        <!--*********************** CATALOGUE ITEMS *****************************************--> 
         <section class="card-panel container catalogue-card">
-          <h4><strong>Catalogue</strong></h4><hr>
+          <h4><strong>Catalogue</strong></h4>
+          <!--************* SEARCH *************-->
+          <form>
+            <div class="input-field col s12">
+              <input id="search-criteria" type="text" required>
+              <label for="search"><i class="mdi-action-search"> Search</i></label>
+            </div>
+          </form>
+
           <div class="row">
-            
+          <fieldset>
             <!--**************** ITEM 1 ********************-->
             <div class="col s4 catalogue-items">
               <div class="row">
@@ -33,7 +41,7 @@
                         
                         <div class="card-content card-content-box blue-grey lighten-5">
                           <div class="card-title card-title-text black-text">
-                              Ram Rod
+                              <p>Ram Rod</p>
                           </div>
                           <label>Polyester</label>
                             <p>Description</p>
