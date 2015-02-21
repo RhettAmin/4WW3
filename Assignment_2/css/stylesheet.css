@@ -31,6 +31,10 @@ label {
  	height: 100%;
 }
 
+.highlight {
+	background-color: #FFFF00;
+}
+
 .input-field input[type=text]:focus + label, .input-field input[type=password]:focus + label, .input-field input[type=email]:focus + label, .input-field input[type=url]:focus + label, .input-field input[type=date]:focus + label, .input-field input[type=tel]:focus + label, .input-field input[type=number]:focus + label, .input-field input[type=search]:focus + label, .input-field textarea:focus.materialize-textarea + label {
     	color: #66bb6a !important;
      }
