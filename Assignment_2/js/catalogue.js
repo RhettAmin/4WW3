@@ -1,4 +1,21 @@
-//This function takes user input from the search bar and hides any cards containing strings that do not match the search criteria
+//This function takes user input from the search bar and scrolls the page to the found string
+
+$("#submit").click(function(e) {
+	e.preventDefault();
+    var g = $("#search-criteria").val(); // Get search bar value
+    //Check through each catalogue item
+    $(".catalogue-items").each(function() {
+    	//Check if text is found in any item
+        if ($(this).text().search(new RegExp(g, "i")) > 0) {	
+        	//Scroll to item where string was found
+	        $('html,body').animate({scrollTop: $(this).offset().top - 50});
+	        //Unlock scroll and page has been scrolled
+	        setTimeout(function(){ $("html, body").stop(); }, 500); 
+    	}
+    });	
+});
+
+/************************ DISREGARD ******************************/
 /*
 $("#search-criteria").on("keyup", function() {
     var g = $(this).val().toLowerCase();
@@ -8,23 +25,3 @@ $("#search-criteria").on("keyup", function() {
     });
 });
 */
-$("#submit").click(function(e) {
-	e.preventDefault();
-    var g = $("#search-criteria").val();
-    
-    $(".catalogue-items").each(function() {
-        //var s =  $("*:contains('" + g + "')");
-        //var divPosition = $('.catalogue-items').offset().top;
-        //$('html, body').animate({scrollTop: divPosition}, "fast");
-        if ($(this).text().search(new RegExp(g, "i")) > 0) {
-	        //$(this).toggleClass('highlight');
-	        //$('html,body').animate({scrollTop: $("."+g).offset().top - 100});
-	        $('html,body').animate({scrollTop: $(this).offset().top - 50});
-	        setTimeout(function(){ $("html, body").stop(); }, 500);
-	        //setTimeout(function(){ $(this).toggleClass('highlight'); }, 500);
-    	}
-    });	
-
-});
-
-
