@@ -9,8 +9,10 @@ $(document).ready(function(){
 
 		$("<form class=\"card-panel z-depth-1 grey lighten-3\"><div class=\"row\"><div class=\"flow-text\"><p>"
 			+ $("#textarea1").val() + "</p>"
-			+ "<div class=\"range-field col s4 offset-s4\"><input type=\"range\" id=\"slider\" min=\"1\" max=\"5\"value=\""
+			+ "<p class=\"col s1 offset-s3 slide-1 slide-shown\">1</p>"
+			+ "<div class=\"range-field col s4\"><input type=\"range\" id=\"slider\" min=\"1\" max=\"5\"value=\""
 			+ $("#slider").val() + "\" disabled=\"disabled\"/></div>"
+			+ "<p class=\"col s1 slide-shown\">5</p>"
 			+ "</p></div></div></form>").prependTo("existingReviews");
 		$("#review").trigger("reset");
 

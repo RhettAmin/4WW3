@@ -2,6 +2,7 @@
 
 $("#submit").click(function(e) {
 	e.preventDefault();
+	var errorCount = 0;
     var g = $("#search-criteria").val(); // Get search bar value
     //Check through each catalogue item
     $(".catalogue-items").each(function() {
@@ -11,8 +12,14 @@ $("#submit").click(function(e) {
 	        $('html,body').animate({scrollTop: $(this).offset().top - 50});
 	        //Unlock scroll and page has been scrolled
 	        setTimeout(function(){ $("html, body").stop(); }, 500); 
+    	} else {
+    		if (errorCount == 0) {
+    			toast("item not found", 2000);
+    			errorCount = 1;
+    		}
     	}
     });	
+    errorCount = 0;
 });
 
 /************************ DISREGARD ******************************/

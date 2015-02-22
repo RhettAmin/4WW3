@@ -263,3 +263,15 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, inp
 	z-index: 1;
 	height: 50px;
 }
+
+/**************************/
+/******** Reviews *********/
+/**************************/
+.slide-1 {
+	position: relative;
+	left: 45px;
+}
+.slide-shown {
+	position: relative;
+	top: -15px;
+}
