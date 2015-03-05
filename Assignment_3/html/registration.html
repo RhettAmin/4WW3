@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"  content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../css/materialize.css"  media="screen,projection"/>
+     <link type="text/css" rel="stylesheet" href="../css/stylesheet.css"  media="screen,projection"/>
+    <title>Gleash - Registration</title> 
+  </head>
+
+  <body class="grey lighten-4">
+
+    <i id="toggle-sidemenu" class="medium green-text text-lighten-2">☰</i>
+
+
+    <!--************* Main *************-->
+    <main class="content">
+    
+      <section id="giraffe-landscape" class="grey lighten-1 z-depth-1">
+        <img src="../images/gleash_landscape.jpg" alt=""> 
+      </section>
+
+      <section id="regis" class="card-panel z-depth-1-half container grey lighten-4">
+          <h4><strong>Registration</strong></h4><hr>
+          <label class="required">Red = Required</label>
+          <form id="regis_form" class="row card-panel z-depth-1 grey lighten-3">
+  
+              <!--************ NAME ******************-->
+              <div class="input-field col s6">
+                  <input id="icon_fname" type="text" class="validate">
+                  <label for="icon_fname" class="required">First Name</label>
+              </div>
+              <div class="input-field col s6">
+                <input id="icon_lname" type="text" class="validate">
+                <label for="icon_lname" class="required">Last Name</label>
+              </div>
+
+              <!--************ CONTACT ******************-->
+              <div class="input-field col s6">
+                <div class="tooltipped" data-position="top" data-delay="25" data-tooltip="Format: account@domain.ext">
+                  <input id="icon_email" type="text" class="validate">
+                  <label for="icon_email" class="required">Email</label>
+                </div>
+              </div>
+              <div class="input-field col s6">
+                <div class="tooltipped" data-position="top" data-delay="25" data-tooltip="Format: 123-456-7890">
+                  <input id="icon_phone" type="tel" class="validate">
+                  <label for="icon_phone" class="required">Phone Number</label>
+                </div>
+              </div>
+
+              <!--************ ACCOUNT ******************-->
+              <div class="input-field col s4">
+                 <div class="tooltipped" data-position="top" data-delay="25" data-tooltip="6 Characters min">
+                  <input id="icon_user" name="username" type="text" class="validate">
+                  <label for="icon_user" class="required">Username</label>
+                </div>
+              </div>
+              <div class="input-field col s4">
+               <div class="tooltipped" data-position="top" data-delay="25" data-tooltip="6 Characters min">
+                  <input id="icon_pass" type="password" class="validate">
+                  <label for="icon_pass" class="required">Password</label>
+                </div>
+              </div>
+              <div class="input-field col s4">
+                <div class="tooltipped" data-position="top" data-delay="25" data-tooltip="6 Characters min">
+                  <input id="icon_cpass" type="password" class="validate">
+                  <label for="icon_cpass" class="required">Confirm Password</label>
+                </div>
+              </div>
+
+              <!--************ ADDRESS ******************-->
+              <div class="input-field col s2">
+                <input id="icon_unit" type="number" class="validate">
+                <label for="icon_unit">Unit #</label>
+              </div>
+              <div class="input-field col s2">
+                <input id="icon_streetnum" type="number" class="validate">
+                <label for="icon_streetnum" class="required">Street #</label>
+              </div>
+              <div class="input-field col s8">
+                <input id="icon_streetname" type="text" class="validate">
+                <label for="icon_streetname" class="required">Street Name</label>
+              </div>
+
+              <!--************ LOCATION ******************-->
+              <div class="input-field col s5">
+                <input id="icon_city" type="text" class="validate">
+                <label for="icon_city" class="required">City</label>
+              </div>
+              <div class="input-field col s5">
+                <input id="icon_province" type="text" class="validate">
+                <label for="icon_province" class="required">Province</label>
+              </div>
+              <div class="input-field col s2">
+                <div class="tooltipped" data-position="top" data-delay="25" data-tooltip="Format: 1a3 b5c">
+                  <input id="icon_postal" type="text" class="validate">
+                  <label for="icon_postal" class="required">Postal Code</label>
+                </div>
+              </div>
+
+              <!--********** BUTTONS **************-->
+              <div class="col s3 offset-s3 regis-buttons">
+                <button id="submit_reg" class="btn btn-color waves-effect waves-light" name="action">Submit
+                </button>
+              </div>
+
+              <div class="col s3 regis-buttons">
+                <button id="rsubmiteset" class="btn btn-color waves-effect waves-light" type="reset" name="action">Reset
+                </button>
+              </div>
+
+          </form> <!-- END ROW -->
+ 
+      </section>
+    </main>
+
+    <!--************* sidenav *************-->
+    <section class="sidemenu card-panel blue-grey lighten-5">
+      <ul>
+        <li id="brand" class="card green z-index-5">GLEASH</li>
+        <li><a class="card waves-effect waves-light green lighten-2 black-text" href="index.html">HOME</a></li>
+        <li><a class="card waves-effect waves-light green lighten-2 black-text" href="catalogue.html">CATALOGUE</a></li>
+        <li><a class="card waves-effect waves-light green lighten-2 black-text" href="contact.html">CONTACT US</a></li>
+        <li><a class="card waves-effect waves-light green lighten-2 black-text" href="reviews.html">REVIEWS</a></li>
+        <li><a class="card waves-effect waves-light green lighten-2 black-text" href="login.html">LOGIN</a></li>
+        <li><a class="card waves-effect waves-light green lighten-2 black-text" href="#">REGISTER</a></li>
+	      <li><a class="card waves-effect waves-light green lighten-2 black-text" href="sitemap.html">SITE MAP</a></li>
+      </ul>
+    </section>
+
+   <!--************* Footer *************-->
+    <footer class="page-footer foot">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Want to connect?</h5>
+            <p class="grey-text text-lighten-4">Follow these links!</p>
+            <p class="grey-text text-lighten-4">(This site works best on Firefox and IE)</p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Links</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="https://github.com/RhettAmin/ww3assn.git">Github</a></li>
+              <li><a class="grey-text text-lighten-3" href="http://materializecss.com/">Materialize</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright foot-copy">
+        <div class="container">
+          © 2015 Copyright. Website by James Anthony and Rhett Amin
+        </div>
+      </div>
+    </footer>
+
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="../js/materialize.min.js"></script>
+    <script type="text/javascript" src="../js/sidemenu_toggle.js"></script>
+    <script type="text/javascript" src="../js/registration.js"></script>
+  </body>
+</html>
