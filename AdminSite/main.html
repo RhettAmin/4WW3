@@ -8,12 +8,11 @@
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
     <link type="text/css" rel="stylesheet" href="css/stylesheet.css" media="screen,projection"/>
-    <title>Gleash - Admin_Logout</title>
+    <title>Gleash - Admin_Main</title>
   </head>
 
   <body class="grey lighten-4">
-    <i id="toggle-sidemenu" class="medium green-text text-lighten-2">☰</i>
-
+    <div class="page-wrap">
     <!--******************* Main ***********************-->
     <main class="content">
       <!--***************** Banner *********************-->
@@ -23,37 +22,35 @@
 
       <section class="card-panel z-depth-1-half container grey lighten-4">
       	<header>
-      	  <h3><strong>GLEASH</strong></h3><hr>
-          <h4><strong>Logout</strong></h4>
+          <h3><strong>GLEASH</strong></h3><hr>
+      	  <h4><strong>Main Page</strong></h4>
       	</header>
 
-        <button id="logout" class="btn btn-color waves-effect waves-light btn-large" href="index.html" name="action">LOGOUT
-        </button>
+        <section class="card-panel z-depth-1 grey lighten-3">
+          <label><a href="product_page.html">Product Page</a></label>
+        </section>
+        <section class="card-panel z-depth-1 grey lighten-3">
+          <label><a href="user_page.html">User Page</a></label>
+        </section>
+        <section class="card-panel z-depth-1 grey lighten-3">
+          <label><a href="logout.html">Logout</a></label>
+        </section>
 
       </section>
-      
-    </main>
 
-    <!--********************** Side Menu **************-->
-    <section class="sidemenu card-panel blue-grey lighten-5">
-      <ul>
-        <li id="brand" class="card green z-index-5">GLEASH</li>
-        <li><a class="card waves-effect waves-light green lighten-2 black-text" href="product_page.html">PRODUCT PAGE</a></li>
-        <li><a class="card waves-effect waves-light green lighten-2 black-text" href="user_page.html">USER PAGE</a></li>
-      </ul>
-    </section>
+    </main>
+    </div>
 
     <!--******************** Footer *******************-->
     <footer class="page-footer foot">
-      <div class="container">
-        © 2015 Copyright. Website by James Anthony, Mathew Wood, and Rhett Amin
-      </div>
+        <div class="container">
+          © 2015 Copyright. Website by James Anthony, Mathew Wood, and Rhett Amin
+        </div>
     </footer>
+
 
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script type="text/javascript" src="js/sidemenu_toggle.js"></script>
-    <script type="text/javascript" src="js/logout.js"></script>
   </body>
 </html>

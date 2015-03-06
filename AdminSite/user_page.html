@@ -12,54 +12,34 @@
   </head>
 
   <body class="grey lighten-4">
-    <i id="toggle-sidemenu" class="medium green-text text-lighten-2">☰</i>
+     
+     <div class="page-wrap">
+      <i id="toggle-sidemenu" class="medium green-text text-lighten-2">☰</i>
 
-    <!--******************* Main ***********************-->
-    <main class="content">
-      <!--***************** Banner *********************-->
-      <section id="giraffe-landscape" class="grey lighten-1 z-depth-1">
-	       <img src="images/gleash_landscape.jpg" alt="banner">
-      </section>
+      <!--******************* Main ***********************-->
+      <main class="content">
+        <!--***************** Banner *********************-->
+        <section id="giraffe-landscape" class="grey lighten-1 z-depth-1">
+           <img src="images/gleash_landscape.jpg" alt="">
+        </section>
 
-      <section class="card-panel z-depth-1-half container grey lighten-4">
-	<header>
-	  <h4><strong>Login</strong></h4>
-	</header>
+        <section class="card-panel z-depth-1-half container grey lighten-4">
+          <header>
+            <h3><strong>GLEASH</strong></h3><hr>
+            <h4><strong>User Page</strong></h4>
+          </header>
 
-	<section>
-	  <div class="row card-panel z-depth-1 grey lighten-3">
-      <form id="loging_form">
-  	    <!--****************** Username *******************-->
-  	    <div class="input-field col s6">
-  	      <input id="icon_uname" type="text" class="validate">
-  	      <label for="icon_uname">Username</label>
-  	    </div>
-  	    <div class="input-field col s6">
-  	      <input id="icon_pwrd" type="text" class="validate">
-  	      <label for="icon_pwrd">Password</label>
-  	    </div>
-
-	     <!--***************** Buttons *********************-->
-      
-        <div class="col s3 offset-s3 regis-buttons">
-          <button id="submit_log" class="btn btn-color waves-effect waves-light" name="action">Submit
-          </button>
-        </div>
-        <div class="col s3 regis-buttons">
-          <button id="reset_log" class="btn btn-color waves-effect waves-light" type="reset" name="action">reset
-          </button>
-        </div>
-      </form>
-	  </div> <!-- END ROW -->
-	</section>
-      </section>
-      
-    </main>
+    
+        </section>
+        
+      </main>
+    </div>
 
     <!--********************** Side Menu **************-->
     <section class="sidemenu card-panel blue-grey lighten-5">
       <ul>
         <li id="brand" class="card green z-index-5">GLEASH</li>
+        <li><a class="card waves-effect waves-light green lighten-2 black-text" href="main.html">MAIN PAGE</a></li>
         <li><a class="card waves-effect waves-light green lighten-2 black-text" href="product_page.html">PRODUCT PAGE</a></li>
         <li><a class="card waves-effect waves-light green lighten-2 black-text" href="logout.html">LOGOUT</a></li>
       </ul>
@@ -76,6 +56,5 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="js/sidemenu_toggle.js"></script>
-    <script type="text/javascript" src="js/login.js"></script>
   </body>
 </html>

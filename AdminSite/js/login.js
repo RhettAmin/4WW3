@@ -18,7 +18,7 @@ $(document).ready(function(){
 			toast("No password entered" , 2000);
 		} else {												
 			if ($("#icon_uname").val() == "Admin" && $("#icon_pwrd").val() == "antwoomin" ) { /* Check if usernmae exists in storage */
-				setTimeout(function(){ window.location = "product_page.html"; }, 1000);
+				setTimeout(function(){ window.location = "main.html";}, 500);
 				$('#loging_form').trigger("reset");
 			} else {
 				if ($("#icon_uname").val() == "Admin" && $("#icon_pwrd").val() != "antwoomin" ){ 
