@@ -297,3 +297,18 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, inp
 	position: relative;
 	top: -15px;
 }
+
+/**************************/
+/****** All Reviews *******/
+/**************************/
+.allreviews-card {
+	margin: 0px;
+}
+.review-title {
+	font-size: 20px;
+}
+
+.subreviews {
+	height: 300px;
+	overflow-y: auto;
+}
