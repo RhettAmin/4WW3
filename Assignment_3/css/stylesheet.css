@@ -120,6 +120,28 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, inp
 	color: #e57373 !important;
 }
 
+
+/**************************/
+/***** Profile Update *****/
+/**************************/
+.updateSlider {
+	position: relative;
+	left: -50px;
+	display: none;
+}
+.slidedown {
+	cursor: pointer;
+}
+.cEmail {
+	position: relative;
+	left: -25px;
+}
+.nameSlider {
+	position: relative;
+	left: -100px;
+}
+
+
 /**************************/
 /******* Catalogue ********/
 /**************************/
