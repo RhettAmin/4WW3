@@ -1,0 +1,37 @@
+Tables needed
+	- User
+		-> pid ?
+		-> First Name
+		-> Last name
+		-> email
+		-> phone
+		-> Username
+		-> password
+		-> unit #
+		-> Street #
+		-> Street name
+		-> City
+		-> Province
+		-> Postal code
+		-> Credit Card number
+
+	- Product
+		-> Pid 
+		-> name
+		-> Material
+		-> description
+		-> Price
+		-> quantity
+		-> image linkpath
+
+	- Cart
+		-> ID 
+		-> product
+		-> quantity
+		-> order number ? (maybe mixed with ID)
+
+	- Reviews (needed for review page)
+		-> id
+		-> product name
+		-> rating
+		-> review
