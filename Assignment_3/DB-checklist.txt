@@ -24,11 +24,14 @@ Tables needed
 		-> quantity
 		-> image linkpath
 
-	- Cart
+	- Transaction
 		-> ID 
-		-> product
+		-> productid
 		-> quantity
-		-> order number ? (maybe mixed with ID)
+		-> total (product price X quantity)
+		-> username
+		-> time
+		-> date
 
 	- Reviews (needed for review page)
 		-> id
