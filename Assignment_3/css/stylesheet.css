@@ -35,6 +35,13 @@ label {
 	background-color: #FFFF00;
 }
 
+.to-the-moon {
+	position: fixed;
+	right: 20px;
+	bottom: 10px;
+	display: none;
+}
+
 .input-field input[type=text]:focus + label, .input-field input[type=password]:focus + label, .input-field input[type=email]:focus + label, .input-field input[type=url]:focus + label, .input-field input[type=date]:focus + label, .input-field input[type=tel]:focus + label, .input-field input[type=number]:focus + label, .input-field input[type=search]:focus + label, .input-field textarea:focus.materialize-textarea + label {
     	color: #66bb6a !important;
      }
@@ -165,7 +172,14 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, inp
 	padding: 0px;
 }
 .card-details {
-	margin-bottom: -10px;
+	margin-bottom: -30px;
+}
+.prod-num {
+	position: relative;
+	top:-5px;
+}
+.add-btn {
+	
 }
 .card-details-info {
 	position: relative;
@@ -179,6 +193,58 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, inp
 [type="checkbox"]:checked + label:before {
 	border-right: 2px solid #66bb6a;
 	border-bottom: 2px solid #66bb6a;
+}
+
+.ribbon-wrap{
+  width: 85px;
+  height: 88px;
+  overflow: hidden;
+  position: absolute;
+  top: -3px;
+  right: -3px;
+}
+
+.ribbon-red {
+  font: bold 15px Sans-Serif;
+  color: #333;
+  text-align: center;
+  font-size: 12px;
+  text-shadow: rgba(255,255,255,0.5) 0px 1px 0px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform:    rotate(45deg);
+  -ms-transform:     rotate(45deg);
+  -o-transform:      rotate(45deg);
+  position: relative;
+  padding: 7px 0;
+  left: -5px;
+  top: 15px;
+  width: 120px;
+  background-color: #d50000;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff5252), to(#d50000)); 
+  background-image: -webkit-linear-gradient(top, #ff5252, #d50000); 
+  background-image:    -moz-linear-gradient(top, #ff5252, #d50000); 
+  background-image:     -ms-linear-gradient(top, #ff5252, #d50000); 
+  background-image:      -o-linear-gradient(top, #ff5252, #d50000); 
+  color: #eee;
+  -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+  -moz-box-shadow:    0px 0px 3px rgba(0,0,0,0.3);
+  box-shadow:         0px 0px 3px rgba(0,0,0,0.3);
+}
+
+.ribbon-red:before, .ribbon-red:after {
+  content: "";
+  border-top:   3px solid #6e8900;   
+  border-left:  3px solid transparent;
+  border-right: 3px solid transparent;
+  position:absolute;
+  bottom: -3px;
+}
+
+.ribbon-red:before {
+  left: 0;
+}
+.ribbon-red:after {
+  right: 0;
 }
 
 /**************************/
@@ -212,23 +278,6 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, inp
  	padding: auto;
  	letter-spacing: 10px;
  }
-.login > form > .form-buttons > button{
-	background-color:#44c767;
-	border-radius:6px;
-	border:1px solid #18ab29;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family: "Ubuntu", sans-serf;
-	font-size:12px;
-	padding:10px 30px;
-	box-shadow: 1px 1px 0px 1px #3dc21b;
-	text-shadow:0px 0px 0px #2f6627;
-	-moz-border-radius:6px;
-	-webkit-border-radius:6px;
-	-moz-box-shadow: 1px 1px 0px 1px #3dc21b;
-	-webkit-box-shadow: 1px 1px 0px
-}
 
 /**************************/
 /******** Contact *********/

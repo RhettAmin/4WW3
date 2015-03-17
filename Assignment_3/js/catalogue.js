@@ -1,34 +1,27 @@
 //This function takes user input from the search bar and scrolls the page to the found string
+$(document).ready(function(){
 
-$("#submit").click(function(e) {
-	e.preventDefault();
-	var errorCount = 0;
-    var g = $("#search-criteria").val(); // Get search bar value
-    //Check through each catalogue item
-    $(".catalogue-items").each(function() {
-    	//Check if text is found in any item
-        if ($(this).text().search(new RegExp(g, "i")) > 0) {	
-        	//Scroll to item where string was found
-	        $('html,body').animate({scrollTop: $(this).offset().top - 50});
-	        //Unlock scroll and page has been scrolled
-	        setTimeout(function(){ $("html, body").stop(); }, 500); 
-    	} else {
-    		if (errorCount == 0) {
-    			toast("item not found", 2000);
-    			errorCount = 1;
-    		}
-    	}
-    });	
-    errorCount = 0;
-});
-
-/************************ DISREGARD ******************************/
-/*
-$("#search-criteria").on("keyup", function() {
-    var g = $(this).val().toLowerCase();
-    $(".catalogue-items").each(function() {
-        var s = $(this).text().toLowerCase();
-        $(this).closest('.catalogue-items')[ s.indexOf(g) !== -1 ? 'animate({scrollTop: divPosition.top}, "slow")' : 'show' ]();
+    $("#search-criteria").on("keyup", function() {
+        var g = $(this).val().toLowerCase();
+        $(".catalogue-items").each(function() {
+            var s = $(this).text().toLowerCase();
+            $(this).closest('.catalogue-items')[ s.indexOf(g) !== -1 ? 'show' : 'hide' ]();
+        });
     });
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 100) {
+            $('#toTheMoon').fadeIn();
+        } else {
+            $('#toTheMoon').fadeOut();
+        }
+    });
+
+
+    $("#toTheMoon").click(function(e) {
+        e.preventDefault();
+        $('html,body').animate({scrollTop: 0});
+    });
+
 });
-*/
+
