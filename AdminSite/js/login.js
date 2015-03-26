@@ -18,7 +18,9 @@ $(document).ready(function(){
 			toast("No password entered" , 2000);
 		} else {												
 			if ($("#icon_uname").val() == "Admin" && $("#icon_pwrd").val() == "antwoomin" ) { /* Check if usernmae exists in storage */
-				setTimeout(function(){ window.location = "main.html";}, 500);
+				sessionStorage.setItem("admin_key", 1);
+				toast("Admin session started.", 500);
+				setTimeout(function(){ window.location = "admin_main.html";}, 500);
 				$('#loging_form').trigger("reset");
 			} else {
 				if ($("#icon_uname").val() == "Admin" && $("#icon_pwrd").val() != "antwoomin" ){ 
@@ -29,5 +31,4 @@ $(document).ready(function(){
 			}
 		}
 	});			//End click function
-
 });
