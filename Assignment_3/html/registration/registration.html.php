@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible"  content="IE=edge, chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">    
     <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="../css/materialize.css"  media="screen,projection"/>
-     <link type="text/css" rel="stylesheet" href="../css/stylesheet.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="../../css/materialize.css"  media="screen,projection"/>
+     <link type="text/css" rel="stylesheet" href="../../css/stylesheet.css"  media="screen,projection"/>
     <title>Gleash - Registration</title> 
   </head>
 
@@ -19,11 +19,12 @@
     <main class="content">
     
       <section id="giraffe-landscape" class="grey lighten-1 z-depth-1">
-        <img src="../images/gleash_landscape.jpg" alt=""> 
+        <img src="../../images/gleash_landscape.jpg" alt=""> 
       </section>
 
       <section id="regis" class="card-panel z-depth-1-half container grey lighten-4">
           <h4><strong>Registration</strong></h4>
+          <p><?php echo $password; ?></p>
           <hr>
           <label class="required">Red = Required</label>
           <form id="regis_form" class="row card-panel z-depth-1 grey lighten-3">
@@ -160,8 +161,8 @@
 
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="../js/materialize.min.js"></script>
-    <script type="text/javascript" src="../js/sidemenu_toggle.js"></script>
-    <script type="text/javascript" src="../js/registration.js"></script>
+    <script type="text/javascript" src="../../js/materialize.min.js"></script>
+    <script type="text/javascript" src="../../js/sidemenu_toggle.js"></script>
+    <script type="text/javascript" src="../../js/registration.js"></script>
   </body>
 </html>

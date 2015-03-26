@@ -9,7 +9,9 @@ $(document).ready(function(){
 	*********************************************/
 	$("#logout").click(function(e) {
 		e.preventDefault(); // stops page from refreshing
-		setTimeout(function(){ window.location = "index.html"; }, 500);	
+		sessionStorage.setItem("admin_key", 0);
+		toast("Admin session terminated.", 500);
+		setTimeout(function(){ window.location = "admin_login.html"; }, 500);	
 	});			//End click function
 
 });

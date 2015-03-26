@@ -4,6 +4,7 @@ body {
 label {
 	font-weight: bold;
 }
+
 .foot{
 	background-color: #81c784 !important;
 	position: relative;
@@ -357,7 +358,29 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, inp
 	font-size: 20px;
 }
 
+.centerstuff {
+	text-align: center;
+}
 .subreviews {
 	height: 300px;
 	overflow-y: auto;
+}
+.subrating {
+	position: relative;
+	top: 15px;
+}
+.allreviews-userreviews {
+	width: 99%;
+}
+
+/**************************/
+/********* Misc ***********/
+/**************************/
+.addPadd-5 {
+	padding: 15px;
+}
+
+.addMargin-side {
+	margin-left: 14px;
+	margin-right: 8px;
 }
