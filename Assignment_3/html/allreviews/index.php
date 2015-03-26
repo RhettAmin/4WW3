@@ -8,20 +8,6 @@
     <link type="text/css" rel="stylesheet" href="../../css/materialize.css"  media="screen,projection"/>
      <link type="text/css" rel="stylesheet" href="../../css/stylesheet.css"  media="screen,projection"/>
     <title>Gleash - Show Reviews</title> 
-
-    <?php
-      $servername = "mysqlsrv2.cas.mcmaster.ca";
-      $username = "woodmjm";
-      $password = "1138343";
-      $db = "woodmjm_db";
-      $table = "Reviews";
-      $prodArray = array("Ram Rod", "Rocket", "Devishly Prada");
-
-      mysql_connect("$servername", "$username", "$password") or die(mysql_error());
-
-      mysql_select_db("$db") or die(mysql_error());
-
-    ?>
   </head>
 
   <body class="grey lighten-4">
@@ -41,62 +27,7 @@
          
           <div class="card-panel z-depth-1-half grey lighten-3">
             <div class='row allreviews-card'>
-
-              <?php   
-                foreach ($prodArray as $pa) {
-
-                  $result = mysql_query("SELECT * FROM Reviews WHERE productName=$pa") or die(mysql_error());
-                  $avg = mysql_query("SELECT AVG(rating) FROM Reviews WHERE productName=$pa") or die(mysql_error());
-                  $a = mysql_fetch_array($avg);
-                  
-                  echo 
-                    "<div class=\"card-panel addMargin-side col s5-5 grey lighten-4 \" >" .
-                        "<div><h5>".$pa."</h5></div>" .
-                         "<div class=\"row\">";
-                            echo "<div class=\"range-field col s10 offset-s1\"><input type=\"range\" id=\"slider\" min=\"1\" max=\"5\"value=\"".
-                                $a['AVG(rating)']."\" disabled=\"disabled\"/></div>" .
-                                "</div>";
-                          
-                  echo "</div>";
-                  
-                      "<div class=\"subreviews\">";
-                  
-                  while ($r = mysql_fetch_assoc($result)) {
-                    echo 
-                      "<div class=\"card-panel row allreviews-userreviews grey lighten-3\">" .
-                        "<p class=\"review-title col s6\">".$r['username']."</p>" .
-                        "<div class=\"range-field col s6 subrating\"><input type=\"range\" id=\"slider\" min=\"1\" max=\"5\"value=\"".
-                                $r['rating']."\" disabled=\"disabled\"/></div>" .
-                        "<p class=\"col s12\">".$r['review']."</p>" .
-                      "</div>";
-                  }
-                    
-                    echo "</div></div>";
-                    
-                }
-                mysql_close();
-               ?>
-           <!--
-            <div class="row allreviews-card">
-              <div class="col s4">
-                <p class="review-title">Ram Rod</p>
-                <p>Total Rating goes here</p>
-                <p>Polyester</p>
-                <p>$199.99</p>
-              </div>
-              <div class="col s8 subreviews">
-                <div class="card-panel grey lighten-5">
-                  <p >Rating</p>
-                </div>
-                <div class="card-panel grey lighten-5">
-                  <p >Rating</p>
-                </div>
-                <div class="card-panel grey lighten-5">
-                  <p >Rating</p>
-                </div>
-              </div>
-            </div>
-            -->
+              <?php  include "showreviews.php" ?>
             </div>
         </div>
       </section>
