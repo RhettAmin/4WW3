@@ -4,6 +4,8 @@
  * Each review will appear under the review submission area as a new card, with the most recent ratings appearing first. */
 $(document).ready(function(){
 
+	$('select').material_select();
+
 	$("#submit").click(function(e){
 		e.preventDefault();
 
