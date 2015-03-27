@@ -367,7 +367,7 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, inp
 }
 .subrating {
 	position: relative;
-	top: 15px;
+	top: 10px;
 }
 .allreviews-userreviews {
 	width: 99%;
