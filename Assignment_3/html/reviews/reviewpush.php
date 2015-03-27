@@ -10,15 +10,12 @@
 
 	mysql_select_db("$db") or die(mysql_error());
 
-	$productname = $_POST['productname'];
-	$rating = $_POST['rating'];
-  	$review = $_POST['reviewtext'];
-
-	$num_rows = mysql_num_rows(mysql_query("SELECT * FROM $table"));
-	$num_rows = $num_rows + 1;
+	$productname = mysql_real_escape_string($_POST['productname']);
+	$rating = mysql_real_escape_string($_POST['rating']);
+  	$review = mysql_real_escape_string($_POST['reviewtext']);
 
   	$query = "INSERT INTO $table(username,productName,rating,review) 
-			VALUES ('Mike','$productname', '$rating', '$review');";
+			VALUES ('Mexican Barack Obama','$productname', '$rating', '$review');";
 
 	mysql_query($query) or die(mysql_error());
 
