@@ -35,8 +35,6 @@
             </div>
           </form>
 
-
-          
             <!--**************** ITEM 1 ********************-->
           
             <?php include "showproducts.php" ?>
