@@ -1,5 +1,5 @@
 Pages needed
-	- welcome page 	 			
+	-(DONE) welcome page 	 	
 	- user registration page
 		-> Check if username/email exists in the database before confirming
 	- user profile update page 								
@@ -7,8 +7,8 @@ Pages needed
 	- catalog page 
 		-> display 5 products initially
 		-> search bar should hide/show items based on metadata
-		-> Items need a quantity
-		-> Display sold out if not in stock
+		-> Items need a quantity(CHECK)
+		-> Display sold out if not in stock(CHECK)
 		-> can't purchase sold out items
 		-> can't buy more than what's in stock
 		-> After user has made a purchase display recommendatons to similar products
@@ -22,7 +22,8 @@ Pages needed
 		-> Cart should be clear after purchase/session expires
 		-> user should be able to logout at anytime 
 			-> cart should be clear
-		-> display order number after purchase
+		-> display order number after purch
+		ase
 			-> Have the number in the user's order status page
 		-> (OPTIONAL) Add 13% tax to subtotal of items
 	- site map page
@@ -30,13 +31,12 @@ Pages needed
 	- logout page 	
 		-> taken to login page after logging out			
 	- user review page 	
-		-> user has to be able to review a product only after ordering the product(s)
-			-> review only the ordered products		
-	- show review page 	
+		-> user has to be able to review a product only after ordering the product(s)		
+	-(DONE) show review page 	
 		-> all reviews should be displayed here
 			-> by every user, for every product		
-	- contact us page and/or searched product output page
-		->
+	-(DONE) contact us page and/or searched product output page
+		
 	- order status page and/or order search page
 		-> display if order has shipped or is shipping
 			-> order placed today - display order will be shipped immediately
@@ -47,9 +47,9 @@ Misc
 	- toast message to guide the user, and give them extra info
 	- display links, that may be useful to user in context of what they're doing
 		-> if user is ready for purchase but not logged in, show link to log in
-	- Images stored in a folder
+	-(DONE) Images stored in a folder
 		-> paths stored on the DB
-		-> if no image exists, display no availble image
+		-> if no image exists, display no available image
 
 
 

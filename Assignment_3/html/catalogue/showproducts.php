@@ -27,9 +27,14 @@
 	                		"<div class=\"card\">" .
 	                    
 	                    		"<div class=\"product-image\">" .
-									"<img class=\"materialboxed catalogue-images\" src=\"" . $r['imagePath'] . "\" data-caption=\"Ram Rod\">" .
-									//"<div class=\"ribbon-wrap\"><div class=\"ribbon-red\">SOLD OUT</div></div>"
-			                    "</div>" .
+									"<img class=\"materialboxed catalogue-images\"  
+										src=\"" . $r['imagePath'] . "\" data-caption=\"" . $r['name'] . "\" alt=\"Image Not Available\">";
+									
+									if ($r['quantity'] == '0') {
+										echo "<div class=\"ribbon-wrap\"><div class=\"ribbon-red\">SOLD OUT</div></div>";
+									}
+									
+			                    echo "</div>" .
 	                    
 	                    "<div class=\"card-content card-content-box blue-grey lighten-5\">" .
 							"<section class=\"card-title card-title-text black-text title\">" .
@@ -43,7 +48,7 @@
 	                    	"<div class=\"row card-details\">" .
 								"<p class=\"col s2\">" . $r['price']  . "</p>" .
 								"<input class=\"col s2 offset-s5 prod-num\" type=\"text\">" .
-								"<i id=\"addToCart\" class=\"small mdi-action-add-shopping-cart col s3\"></i>" .
+								"<i id=\"addToCart\" class=\"small mdi-action-add-shopping-cart col s3\" disabled></i>" .
 	                      	"</div>" .
 	                    "</div>" .
 
