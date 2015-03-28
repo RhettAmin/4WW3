@@ -3,7 +3,6 @@
 	$username = "woodmjm";
 	$password = "1138343";
 	$db = "woodmjm_db";
-	$table = "Reviews";
 	$prodArray = array("Anaconda", "Blue Wave", "Classic Ropey", "Fisher", "Monkey Fist", 
 		"Ocean Breeze", "OJ Gleash", "Old Duster", "Purple Haze", "Ram Rod", "Red Rocket", "Restrainer", 
 		"Silverado", "The Patriot");

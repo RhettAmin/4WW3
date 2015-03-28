@@ -154,6 +154,13 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, inp
 /******* Catalogue ********/
 /**************************/
 
+.goToCartPage {
+	position: fixed;
+	top: 0px;
+	right: 15px;
+	clear: both;
+}
+
 .catalogue-card {
 	padding-bottom: 0px;
 }
