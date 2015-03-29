@@ -24,14 +24,15 @@
         <!--*********************** CATALOGUE ITEMS *****************************************--> 
         <section class="card-panel container catalogue-card">
           <h4><strong>Catalogue</strong></h4>
+
           <!--************* SEARCH *************-->
-          <form class="row">
+          <form action="searchproducts.php" method="post" class="row">
             <div class="input-field col s8">
-              <input id="search-criteria" type="text" required>
-              <label for="search-criteria"><i class="mdi-action-search"> Search</i></label>
+              <input id="" name="search" type="text" required>
+              <label for="search-criteria"><i class="mdi-action-search">Search</i></label>
             </div>
             <div class="col s4 regis-buttons">
-              <button id="submit" class="btn btn-color waves-effect waves-light" name="action">Submit</button>
+              <button id="submit" type="submit" class="btn btn-color waves-effect waves-light" name="action">Submit</button>
             </div>
           </form>
 
