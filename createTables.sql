@@ -45,7 +45,6 @@ create table Transaction(
 	transactionId integer not null,
 	productid integer not null,
 	quantity integer,
-	total real,
 	username varchar(50),
 	timeOf TIME, 
 	dateOf DATE,
