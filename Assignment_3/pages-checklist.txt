@@ -5,8 +5,8 @@ Pages needed
 	- user profile update page 								
 		-> must be able to update registered info
 	- catalog page 
-		-> display 5 products initially
-		-> search bar should hide/show items based on metadata
+		-> display 5 products initially (CHECK)
+		-> search bar should hide/show items based on metadata (CHECK)
 		-> Items need a quantity(CHECK)
 		-> Display sold out if not in stock(CHECK)
 		-> can't purchase sold out items

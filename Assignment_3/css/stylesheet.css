@@ -156,7 +156,7 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, inp
 
 .goToCartPage {
 	position: fixed;
-	top: 0px;
+	top: 25px;
 	right: 15px;
 	clear: both;
 }

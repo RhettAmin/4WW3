@@ -1,14 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8"></meta>
-    <meta http-equiv="X-UA-Compatible"  content="IE=edge,chrome=1"></meta>
-    <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="../../css/materialize.css"  media="screen,projection"/>
-    <link type="text/css" rel="stylesheet" href="../../css/stylesheet.css"  media="screen,projection"/>
-    <title>Gleash - Contact Us</title>  
-  </head>
+  <?php include"../includes/head.php";?>
 
   <body class="grey lighten-4">
 
