@@ -23,6 +23,7 @@
           <?php include "showproducts.php" ?>
 
 <!--*********************** END CATALOGUE ITEMS **************************************-->
+    </section>
     </main>
 
     <?php include "../includes/sidemenu.php" ?>
@@ -35,7 +36,6 @@
     <script type="text/javascript" src="/~aminr4/A3/js/materialize.min.js"></script>
     <script type="text/javascript" src="/~aminr4/A3/js/sidemenu_toggle.js"></script>
     <script type="text/javascript" src="/~aminr4/A3/js/catalogue.js"></script>
-    <script type="text/javascript" src="/~aminr4/A3/js/addToCart.js"></script>
   </body>
 </html>
 

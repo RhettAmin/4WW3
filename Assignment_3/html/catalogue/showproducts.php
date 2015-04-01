@@ -9,12 +9,11 @@
 	mysql_select_db("$db") or die(mysql_error());
 
 	echo 
-	 	"<form id=\"testForm\" >" .
+	 	"<form action=\"../checkout/\" method=\"post\">" .
 	 	"<div class=\"row\">" .
-		"<button id=\"submitcat\" class=\"waves-effect waves-light btn-large goToCartPage green lighten-2\">Checkout</button>";
+		"<button type=\"submit\" id=\"submitCart\" class=\"waves-effect waves-light btn-large goToCartPage green lighten-2\"><i class=\"mdi-action-shopping-cart right\"></i>Checkout</button>";
 
-	$result = mysql_query("SELECT * FROM Products LIMIT 5") or die(mysql_error());
-	
+	$result = mysql_query("SELECT * FROM Products") or die(mysql_error());
 	
 	while ($r = mysql_fetch_assoc($result)) {
 	   echo
@@ -49,8 +48,7 @@
 		                    "<div class=\"card-action card-details blue-grey lighten-4\">" .
 		                    	"<div class=\"row card-details\">" .
 									"<p class=\"col s2\">$" . $r['price'] . "</p>" .
-									"<p class=\"col s2 offset-s4\">Quantity:</p>" .
-									"<input type=\"text\" class=\"col s2 offset-s2 prod-num\" name=\"" . $r['id'] . "\">" .
+									"<i id=\"". $r['id'] ."\" class=\"col s2 offset-s8 small mdi-action-add-shopping-cart addToCart\"></i>" .
 		                      	"</div>" .
 		                    "</div>" .
 

@@ -159,6 +159,7 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, inp
 	top: 25px;
 	right: 15px;
 	clear: both;
+	display: none;
 }
 
 .catalogue-card {

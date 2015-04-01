@@ -18,7 +18,7 @@
     <main class="content">
       
       <section id="giraffe-landscape" class="grey lighten-1 z-depth-1">
-	<img src="../images/gleash_landscape.jpg" alt="">
+	<img src="../../images/gleash_landscape.jpg" alt="">
       </section>
 
       <section class="card-panel z-depth-1-half container grey lighten-4">
@@ -28,21 +28,21 @@
 
       	<section>
       	  <div class="row card-panel z-depth-1 grey lighten-3">
-            <form id="loging_form">
+            <form name="myForm" action="login.php" method="post" id="loging_form">
         	    <!--********** Username **********-->
         	    <div class="input-field col s6">
-        	      <input id="icon_uname" type="text" class="validate">
+        	      <input name="username" id="icon_uname" type="text" class="validate">
         	      <label for="icon_uname">Username</label>
         	    </div>
         	    <div class="input-field col s6">
-        	      <input id="icon_pwrd" type="text" class="validate">
+        	      <input name="password" id="icon_pwrd" type="text" class="validate">
         	      <label for="icon_pwrd">Password</label>
         	    </div>
 
       	     <!--**********Buttons**********-->
             
               <div class="col s3 offset-s3 regis-buttons">
-                <button id="submit_log" class="btn btn-color waves-effect waves-light" name="action">Submit
+                <input type="submit" name="action" value="Submit Form">
                 </button>
               </div>
               <div class="col s3 regis-buttons">
@@ -97,8 +97,8 @@
 
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="../js/materialize.min.js"></script>
-    <script type="text/javascript" src="../js/sidemenu_toggle.js"></script>
-    <script type="text/javascript" src="../js/login.js"></script>
+    <script type="text/javascript" src="../../js/materialize.min.js"></script>
+    <script type="text/javascript" src="../../js/sidemenu_toggle.js"></script>
+    <script type="text/javascript" src="../../js/login.js"></script>
   </body>
 </html>
