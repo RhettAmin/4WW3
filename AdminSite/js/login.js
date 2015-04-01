@@ -20,7 +20,7 @@ $(document).ready(function(){
 			if ($("#icon_uname").val() == "Admin" && $("#icon_pwrd").val() == "antwoomin" ) { /* Check if usernmae exists in storage */
 				sessionStorage.setItem("admin_key", 1);
 				toast("Admin session started.", 500);
-				setTimeout(function(){ window.location = "admin_main.html";}, 500);
+				setTimeout(function(){ window.location = "index.html";}, 500);
 				$('#loging_form').trigger("reset");
 			} else {
 				if ($("#icon_uname").val() == "Admin" && $("#icon_pwrd").val() != "antwoomin" ){ 
