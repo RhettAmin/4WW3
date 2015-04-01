@@ -26,25 +26,21 @@
 			              <th>Quantity</th>
 			              <th>In Stock</th>
 			              <th>Update</th>
+			              <th>Delete</th>
 			          </tr>
 			        </thead>
 
 			        <tbody>
 						<?php 
-							$servername = "mysqlsrv2.cas.mcmaster.ca";
-							$username = "woodmjm";
-							$password = "1138343";
-							$db = "woodmjm_db";
+							include "../includes/connect.php";
 
-							// Create connection
-							mysql_connect("$servername", "$username", "$password") or die(mysql_error());
-
-							mysql_select_db("$db") or die(mysql_error());
-
-							session_start();
-
-						 	$userCart = "Cart_" . $_SESSION['username'];
+							$username = $_SESSION['username'];
+						 	$userCart = "Cart_" . $username;
 						 	$totalCost;
+						 	$user_ccard = mysql_query("SELECT creditCard FROM Users WHERE username='$username';");
+							$creditCard = mysql_fetch_assoc($user_ccard);
+							$cc = $creditCard['creditCard'];
+							$cardblocked = substr_replace($cc, '************', 0, -4);
 
 							$cart = mysql_query("SELECT * FROM $userCart;");
 							while ($c = mysql_fetch_assoc($cart)) {
@@ -55,14 +51,19 @@
 								$totalCost += $itemCost;
 						    	echo 
 									"<tr class=\"\">" .
-											"<td width=\"30$\">" . $r['name'] . "</td>" .
-											"<td width=\"18%\">$" . $r['price'] . "</td>" .
-											"<td width=\"22%\">$" . $itemCost . "</td>" .
-											"<td width=\"7%\"><input type=\"number\" name=\"" . $r['id'] . "\"  value=\"" . $c['quantity'] . "\"></td>" .
-											"<td width=\"8%\">" . $r['quantity'] . "</td>" .
-											"<td width=\"15%\"> 
+											"<td width=\"18$\">" . $r['name'] . "</td>" .
+											"<td width=\"16%\">$" . $r['price'] . "</td>" .
+											"<td width=\"16%\">$" . $itemCost . "</td>" .
+											"<td width=\"8%\"><input type=\"number\" name=\"" . $r['id'] . "\"  value=\"" . $c['quantity'] . "\"></td>" .
+											"<td width=\"11%\">" . $r['quantity'] . "</td>" .
+											"<td width=\"16%\"> 
 												<button id=\"" . $r['id'] . "\" class=\"update btn waves-effect waves-light green lighten-2\">
 													<i class=\"mdi-action-cached right\"></i>Update
+												</button>
+											</td>" .
+											"<td width=\"16%\"> 
+												<button id=\"" . $r['id'] . "\" class=\"delete btn waves-effect waves-light red lighten-2\">
+													<i class=\"mdi-action-delete right\"></i>Delete
 												</button>
 											</td>" .
 									"</tr>";
@@ -74,13 +75,21 @@
 			</form>
 			<br /><br />
 
-			<div class="row">
-				<?php
-					echo 
-						"<p class=\"col s2 offset-s5\">Total: $" .$totalCost. "</p>" .
-						"<button id=\"confirmPayment\" class=\"col s2 offset-s3 btn waves-effect waves-light green lighten-2\">
-							<i class=\"mdi-action-done right\"></i>Confirm</button>";
-				?>
+			<div>
+				<table>
+					<tr>
+						<?php
+							echo 
+								"<td width=\"13%\"></td>" .
+								"<td width=\"17%\">Total: $" .$totalCost. "</td>" .
+								"<td width=\"18%\"></td>" .
+								"<td width=\"15%\">Card: " .$cardblocked. "</td>" .
+								"<td width=\"20%\"></td>" .
+								"<td width=\"16%\"><button id=\"confirmPayment\" class=\"col s2 offset-s1 confirm btn waves-effect waves-light green lighten-2\">
+									<i class=\"mdi-action-done right\"></i>Confirm</button></td>";
+						?>
+					</tr>
+				</table>
 			</div>
 		</section>
     </main>
@@ -94,7 +103,7 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="/~aminr4/A3/js/materialize.min.js"></script>
     <script type="text/javascript" src="/~aminr4/A3/js/sidemenu_toggle.js"></script>
-    <script type="text/javascript" src="/~aminr4/A3/js/updateCart.js"></script>
+    <script type="text/javascript" src="/~aminr4/A3/js/cart.js"></script>
   </body>
 </html>
 

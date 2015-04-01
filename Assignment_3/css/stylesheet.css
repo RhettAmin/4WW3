@@ -187,8 +187,9 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, inp
 	position: relative;
 	top:-5px;
 }
-.add-btn {
-	
+.raise {
+	position: relative;
+	top: -10px;
 }
 .card-details-info {
 	position: relative;

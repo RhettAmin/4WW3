@@ -1,12 +1,5 @@
 <?php
-	$servername = "mysqlsrv2.cas.mcmaster.ca";
-	$username = "woodmjm";
-	$password = "1138343";
-	$db = "woodmjm_db";
-
-	mysql_connect("$servername", "$username", "$password") or die(mysql_error());
-
-	mysql_select_db("$db") or die(mysql_error());
+	include "../includes/connect.php";
 
 	echo 
 	 	"<form action=\"../checkout/\" method=\"post\">" .
@@ -14,7 +7,7 @@
 		"<button type=\"submit\" id=\"submitCart\" class=\"waves-effect waves-light btn-large goToCartPage green lighten-2\"><i class=\"mdi-action-shopping-cart right\"></i>Checkout</button>";
 
 	$result = mysql_query("SELECT * FROM Products") or die(mysql_error());
-	
+
 	while ($r = mysql_fetch_assoc($result)) {
 	   echo
 			"<div class=\"col s4 catalogue-items\">" .
@@ -47,9 +40,12 @@
 
 		                    "<div class=\"card-action card-details blue-grey lighten-4\">" .
 		                    	"<div class=\"row card-details\">" .
-									"<p class=\"col s2\">$" . $r['price'] . "</p>" .
-									"<i id=\"". $r['id'] ."\" class=\"col s2 offset-s8 small mdi-action-add-shopping-cart addToCart\"></i>" .
-		                      	"</div>" .
+									"<p class=\"col s2 raise\">$" . $r['price'] . "</p>" ;
+									if($r['quantity'] != 0) {
+										echo "<i id=\"". $r['id'] ."\" class=\"col s2 offset-s8 small mdi-action-add-shopping-cart addToCart raise\"></i>";
+									}
+									
+		                      	echo "</div>" .
 		                    "</div>" .
 
                   		"</div>" .
