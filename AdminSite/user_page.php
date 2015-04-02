@@ -103,6 +103,11 @@
             <form action="user_edit.php" method = "post" id="user" enctype="multipart/form-dat" class="card-panel z-depth-1-half container grey lighten-3">
               <div class="collapsible-header grey lighten-3"><h4><strong>Edit User</strong></h4></div>
               <div class="collapsible-body">
+                <div class="row">
+                  <div class="col s12 flow-text">
+                    <p>(Username is required. Any field left blank will not be updated.)</p>
+                  </div>
+                </div>
                 <div class "row">
                   <div class="input-field col s12">
                     <input id="icon_fname" name="username" type="text" class="validate">
