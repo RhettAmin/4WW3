@@ -113,7 +113,7 @@ $(document).ready(function(){
 					var items = {username: $("#icon_user").val(), password: $("#icon_pass").val()}; //create array to store user credentials
 					localStorage.setItem("user_"+ $("#icon_user").val(), JSON.stringify(items)); 	//store the array
 					toast("Thank you for registering " + $("#icon_user").val() + "!", 2000);		//notify user for successful registraton
-					setTimeout(function(){ window.location = "login.html"; }, 2000);				//change window location
+					setTimeout(function(){ window.location = "../login"; }, 2000);				//change window location
 					$('#regis_form').trigger("reset");												//reset form
 				} else {
 					toast("That Username is taken, please try again" , 2000);

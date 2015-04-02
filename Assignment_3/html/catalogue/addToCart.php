@@ -1,15 +1,6 @@
 <?php 
 
-	$servername = "mysqlsrv2.cas.mcmaster.ca";
-	$username = "woodmjm";
-	$password = "1138343";
-	$db = "woodmjm_db";
-
-	mysql_connect("$servername", "$username", "$password") or die(mysql_error());
-
-	mysql_select_db("$db") or die(mysql_error());
-
-	session_start();
+	include "../includes/connect.php";
 
 	$userCart = "Cart_" . $_SESSION['username'];
 
@@ -31,14 +22,5 @@
 		echo "Item added to Cart";
 	}
 
-	// $c = mysql_query("SELECT COUNT(pid) AS counter FROM $userCart pid=$id;"));
-	// echo $c;
-	// if ($check == 1) {
-	// 	print "Item already added to Cart";
-	// } else {
-	// 	$add = mysql_query("INSERT INTO $userCart VALUES('$id',1)");
-	// 	print "Item added to Cart";
-	// }
-	
 
 	

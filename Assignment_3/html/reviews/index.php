@@ -1,6 +1,9 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-  <?php include"../includes/head.php";?>
+  <?php 
+      include "../includes/head.php"; 
+      include "../includes/checklogin.php";
+  ?>
 
   <body class="grey lighten-4">
 
@@ -16,39 +19,54 @@
 
       <section id="about-us" class="card-panel z-depth-1-half container grey lighten-4">
           <div class="flow-text">
-          <header><h4><strong>Reviews</strong></h4></header>
-          <section>
-            <p>
-              Leave a review in the area below, and use the slider to give us a rating!
-            </p>
-          </section>
+            <header><h4><strong>Reviews</strong></h4></header>
+            <section>
+              <p>
+                Leave a review in the area below, and use the slider to give us a rating!
+              </p>
+            </section>
           </div>
 
           <!--************ WRITE A REVIEW CARD ************-->
-          <form action="reviewpush.php"  method="post" id="review"  enctype="multipart/form-data" class="card-panel z-depth-1 grey lighten-3">
-            <!-- REVIEW INPUT FIELD -->
-            <div class="row">
-              <div class="col s6 offset-s3">
-                <p class="grey-text"><Strong>Product Name</Strong></p>
-                <select name="productname" class="browser-default">
-                  <option value="Anaconda">Anaconda</option>
-                  <option value="Blue Wave">Blue Wave</option>
-                  <option value="Classic Ropey">Classic Ropey</option>
-                  <option value="Devilishly Prada">Devilishly Prada</option>
-                  <option value="Fisher">Fisher</option>
-                  <option value="Monkey Fist">Monkey Fist</option>
-                  <option value="Ocean Breeze">Ocean Breeze</option>
-                  <option value="OJ Gleash">OJ Gleash</option>
-                  <option value="Old Duster">Old Duster</option>
-                  <option value="Purple Haze">Purple Haze</option>
-                  <option value="Ram Rod">Ram Rod</option>
-                  <option value="Red Rocket">Red Rocket</option>
-                  <option value="Restrainer">Restrainer</option>
-                  <option value="Silverado">Silverado</option>
-                  <option value="The Patriot">The Patriot</option>
-                  
-                </select>
-              </div>
+          <form action="reviewpush.php"  method="post" id="review" class="card-panel z-depth-1 grey lighten-3">
+              <!-- REVIEW INPUT FIELD -->
+              <div class="row">
+                <div class="col s6 offset-s3">
+                  <p class="grey-text"><Strong>Product Name</Strong></p>
+                  <select name="productname" class="browser-default">
+                    <!-- <option value="Anaconda">Anaconda</option>
+                    <option value="Blue Wave">Blue Wave</option>
+                    <option value="Classic Ropey">Classic Ropey</option>
+                    <option value="Devilishly Prada">Devilishly Prada</option>
+                    <option value="Fisher">Fisher</option>
+                    <option value="Monkey Fist">Monkey Fist</option>
+                    <option value="Ocean Breeze">Ocean Breeze</option>
+                    <option value="OJ Gleash">OJ Gleash</option>
+                    <option value="Old Duster">Old Duster</option>
+                    <option value="Purple Haze">Purple Haze</option>
+                    <option value="Ram Rod">Ram Rod</option>
+                    <option value="Red Rocket">Red Rocket</option>
+                    <option value="Restrainer">Restrainer</option>
+                    <option value="Silverado">Silverado</option>
+                    <option value="The Patriot">The Patriot</option> -->
+
+                    <?php 
+                        include "../includes/connect.php";
+
+                        $username = $_SESSION['username'];
+
+                        $query = mysql_query("SELECT DISTINCT name FROM Products LEFT JOIN Transaction ON Products.id=Transaction.productID WHERE Transaction.username='$username'");
+
+                        while ($row = mysql_fetch_assoc($query)) {
+                          $r = $row['name'];
+                          echo "<option value=\"" .$r. "\">" .$r. "</option>";
+                        }
+
+
+                    ?>
+                    
+                  </select>
+                </div>
 
               <div class="input-field col s6 offset-s3">
                 <textarea id="textarea1" name="reviewtext" class="materialize-textarea"></textarea>
@@ -68,48 +86,14 @@
               </div>
             </div>
           </form>
-          <!--************ END OF REVIEW CARD ************-->
-          <existingReviews></existingReviews>
       </section>
     </main>
 
-    <section class="sidemenu card-panel blue-grey lighten-5">
-      <ul>
-        <li id="brand" class="card green z-index-5">GLEASH</li>
-        <li><a class="card waves-effect waves-light green lighten-2 black-text" href="index.html">HOME</a></li>
-        <li><a class="card waves-effect waves-light green lighten-2 black-text" href="catalogue.html">CATALOGUE</a></li>
-        <li><a class="card waves-effect waves-light green lighten-2 black-text" href="contact.html">CONTACT US</a></li>
-        <li><a class="card waves-effect waves-light green lighten-2 black-text" href="#">REVIEWS</a></li>
-        <li><a class="card waves-effect waves-light green lighten-2 black-text" href="login.html">LOGIN</a></li>
-        <li><a class="card waves-effect waves-light green lighten-2 black-text" href="registration.html">REGISTER</a></li>
-	      <li><a class="card waves-effect waves-light green lighten-2 black-text" href="sitemap.html">SITE MAP</a></li>
-      </ul>
-    </section>
+    <!--************* sidenav *************-->
+    <?php include "../includes/sidemenu.php" ?>
 
     <!--************* Footer *************-->
-    <footer class="page-footer foot">
-      <div class="container">
-        <div class="row">
-          <div class="col l6 s12">
-            <h5 class="white-text">Want to connect?</h5>
-            <p class="grey-text text-lighten-4">Follow these links!</p>
-            <p class="grey-text text-lighten-4">(This site works best on Firefox and IE)</p>
-          </div>
-          <div class="col l4 offset-l2 s12">
-            <h5 class="white-text">Links</h5>
-            <ul>
-              <li><a class="grey-text text-lighten-3" href="https://github.com/RhettAmin/ww3assn.git">Github</a></li>
-              <li><a class="grey-text text-lighten-3" href="http://materializecss.com/">Materialize</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="footer-copyright foot-copy">
-        <div class="container">
-          © 2015 Copyright. Website by James Anthony and Rhett Amin
-        </div>
-      </div>
-    </footer>
+    <?php include "../includes/footer.php" ?>
 
 
     <!--Import jQuery before materialize.js-->

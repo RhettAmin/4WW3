@@ -12,7 +12,7 @@ $(document).ready(function(){
             type: 'POST',
             success: function(output) {
                 toast(output,1000);
-                setTimeout(function(){ window.location = "../checkout/"; }, 1000);
+                setTimeout(function(){ window.location = "../checkout"; }, 1000);
             },
             error: function(output) {
                 alert(output);
@@ -32,7 +32,7 @@ $(document).ready(function(){
             type: 'POST',
             success: function(output) {
                 toast(output,1000);
-                setTimeout(function(){ window.location = "../checkout/"; }, 1000);
+                setTimeout(function(){ window.location = "../checkout"; }, 1000);
             },
             error: function(output) {
                 alert(output);
@@ -48,7 +48,7 @@ $(document).ready(function(){
             type: 'POST',
             success: function(output) {
                 toast(output,1000);
-                //setTimeout(function(){ window.location = "../catalogue/"; }, 1000);
+                setTimeout(function(){ window.location = "../catalogue"; }, 1000);
             },
             error: function(output) {
                 alert(output);

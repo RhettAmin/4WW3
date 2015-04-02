@@ -118,45 +118,11 @@
       </section>
     </main>
 
-    <!--************* sidenav *************-->
-    <section class="sidemenu card-panel blue-grey lighten-5">
-      <ul>
-        <li id="brand" class="card green z-index-5">GLEASH</li>
-        <li><a class="card waves-effect waves-light green lighten-2 black-text" href="index.html">HOME</a></li>
-        <li><a class="card waves-effect waves-light green lighten-2 black-text" href="catalogue.html">CATALOGUE</a></li>
-        <li><a class="card waves-effect waves-light green lighten-2 black-text" href="contact.html">CONTACT US</a></li>
-        <li><a class="card waves-effect waves-light green lighten-2 black-text" href="reviews.html">REVIEWS</a></li>
-        <li><a class="card waves-effect waves-light green lighten-2 black-text" href="login.html">LOGIN</a></li>
-        <li><a class="card waves-effect waves-light green lighten-2 black-text" href="#">REGISTER</a></li>
-	      <li><a class="card waves-effect waves-light green lighten-2 black-text" href="sitemap.html">SITE MAP</a></li>
-      </ul>
-    </section>
+    <?php include "../includes/sidemenu.php" ?>
 
-   <!--************* Footer *************-->
-    <footer class="page-footer foot">
-      <div class="container">
-        <div class="row">
-          <div class="col l6 s12">
-            <h5 class="white-text">Want to connect?</h5>
-            <p class="grey-text text-lighten-4">Follow these links!</p>
-            <p class="grey-text text-lighten-4">(This site works best on Firefox and IE)</p>
-          </div>
-          <div class="col l4 offset-l2 s12">
-            <h5 class="white-text">Links</h5>
-            <ul>
-              <li><a class="grey-text text-lighten-3" href="https://github.com/RhettAmin/ww3assn.git">Github</a></li>
-              <li><a class="grey-text text-lighten-3" href="http://materializecss.com/">Materialize</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="footer-copyright foot-copy">
-        <div class="container">
-          © 2015 Copyright. Website by James Anthony and Rhett Amin
-        </div>
-      </div>
-    </footer>
+    <!--************* Footer *************-->
 
+    <?php include "../includes/footer.php" ?>
 
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>

@@ -24,6 +24,12 @@ label {
  	margin-bottom: -4px;
 }
 
+.account {
+	position: fixed;
+	top: 0px;
+	right: 15px;
+}
+
 .container {
  	margin-left: auto;
  	margin-right: auto;
@@ -34,6 +40,9 @@ label {
 
 .highlight {
 	background-color: #FFFF00;
+}
+.hide {
+	display: none;
 }
 
 .to-the-moon {
@@ -59,9 +68,9 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, inp
 /**************************/
 #toggle-sidemenu {
 	position: fixed;
-	top: 0px;
+	top: 10px;
 	left: 15px;
-	z-index: 5;
+	z-index: 99;
 	-webkit-transition: all 0.45s ease-in-out 0;
   	-moz-transition: all 0.45s ease-in-out 0;
   	transition: all 0.45s ease-in-out 0;
@@ -72,7 +81,7 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, inp
 	top: 0px;
 	left: -250px;
 	bottom: 0px;
-	z-index: 1;
+	z-index: 99;
 	width: 250px;
 	padding: 0px;
 	-webkit-transition: all 0.4s ease-out 0;
@@ -156,10 +165,9 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, inp
 
 .goToCartPage {
 	position: fixed;
-	top: 25px;
+	top: 35px;
 	right: 15px;
 	clear: both;
-	display: none;
 }
 
 .catalogue-card {

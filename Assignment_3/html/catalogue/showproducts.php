@@ -3,8 +3,15 @@
 
 	echo 
 	 	"<form action=\"../checkout/\" method=\"post\">" .
-	 	"<div class=\"row\">" .
-		"<button type=\"submit\" id=\"submitCart\" class=\"waves-effect waves-light btn-large goToCartPage green lighten-2\"><i class=\"mdi-action-shopping-cart right\"></i>Checkout</button>";
+	 	"<div class=\"row\">";
+
+	 	$userCart = "Cart_".$_SESSION['username'];
+	 	$checkTable = mysql_query("SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME='$userCart'");
+	 	if (mysql_fetch_assoc($checkTable) == 0) {
+	 		echo "<button type=\"submit\" id=\"submitCart\" class=\"waves-effect waves-light btn-large goToCartPage hide green lighten-2\"><i class=\"mdi-action-shopping-cart right\"></i>Checkout</button>";
+		} else {
+			echo "<button type=\"submit\" id=\"submitCart\" class=\"waves-effect waves-light btn-large goToCartPage green lighten-2\"><i class=\"mdi-action-shopping-cart right\"></i>Checkout</button>";
+		}
 
 	$result = mysql_query("SELECT * FROM Products") or die(mysql_error());
 
